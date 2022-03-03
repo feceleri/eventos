@@ -8,7 +8,7 @@
 ![Github All Contributors](https://img.shields.io/github/license/feceleri/eventos?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/feceleri/eventos?style=for-the-badge)
 
-<img src="http://2.bp.blogspot.com/-hATZBZD4IoI/VX8TcMy3FrI/AAAAAAAAE0w/h3wRySsv_Fk/s400/Jaw_EN.gif" alt="exemplo imagem">
+<img src="https://imgur.com/gallery/X9XQ0IL" alt="exemplo imagem">
 
 > Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
 
