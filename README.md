@@ -5,8 +5,8 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/feceleri/eventos?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/feceleri/eventos?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/feceleri/eventos?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/feceleri/eventos?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/feceleri/eventos?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/github/issues/feceleri/eventos?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/github/pr-raw/feceleri/eventos?style=for-the-badge)
 
 <img src="http://2.bp.blogspot.com/-hATZBZD4IoI/VX8TcMy3FrI/AAAAAAAAE0w/h3wRySsv_Fk/s400/Jaw_EN.gif" alt="exemplo imagem">
 
