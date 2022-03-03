@@ -316,10 +316,10 @@
                                     <a class="nav-link user" href="<?= base_url('alterarUser') ?>">Usuários</a>
                                 </li>
                                 <li class="nav-item dropdown  ">
-                                    <a class="nav-link pesq" href="<?= base_url('listaPesquisa') ?>">Pesquisa</a>
+                                    <a class="nav-link pesq" href="<?= base_url('listaPesquisa') ?>">Pesquisas</a>
                                 </li>
                                 <li class="nav-item dropdown  ">
-                                    <a class="nav-link campanha" href="<?= base_url('listarCampanhas') ?>">Campanha</a>
+                                    <a class="nav-link campanha" href="<?= base_url('listarCampanhas') ?>">Campanhas</a>
                                 </li>
                             </ul>
 
