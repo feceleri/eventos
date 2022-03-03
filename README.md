@@ -73,16 +73,16 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/61296703?v=4" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+      <a href="https://github.com/kah89">
+        <img src="https://avatars.githubusercontent.com/u/61296703?v=4" width="100px;" alt="Foto da Karina Souza no GitHub"/><br>
         <sub>
           <b>Karina Souza</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/25962905?s=400&u=badb196a457543d9007713b19ce9bde9c57bd2c2&v=4" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+      <a href="https://github.com/feceleri/">
+        <img src="https://avatars.githubusercontent.com/u/25962905?s=400&u=badb196a457543d9007713b19ce9bde9c57bd2c2&v=4" width="100px;" alt="Foto do Felipe Celeri"/><br>
         <sub>
           <b>Felipe Celeri</b>
         </sub>
