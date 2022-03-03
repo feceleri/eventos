@@ -1,6 +1,0 @@
-ERROR - 2022-02-17 17:21:47 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
-error:1408F10B:SSL routines:ssl3_get_record:wrong version number
-ERROR - 2022-02-17 17:24:23 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
-error:1408F10B:SSL routines:ssl3_get_record:wrong version number
-ERROR - 2022-02-17 17:24:35 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
-error:1408F10B:SSL routines:ssl3_get_record:wrong version number

@@ -1,3 +1,0 @@
-ERROR - 2021-10-15 10:28:46 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
-ERROR - 2021-10-15 10:30:07 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
-ERROR - 2021-10-15 10:30:07 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
