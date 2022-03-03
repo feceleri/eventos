@@ -16,10 +16,10 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [] Criar cadastro de eventos integrando com a agenda de eventos do portal
-- [] Integrar cadastro e login usuários com o E-Cat
-- [] Criar modulo de gerenciamento de ministrantes (cadastro, avaliação, etc...) 
-- [] Criar esquema de verificação de presença para eventos presenciais
+- [ ] Criar cadastro de eventos integrando com a agenda de eventos do portal
+- [ ] Integrar cadastro e login usuários com o E-Cat
+- [ ] Criar modulo de gerenciamento de ministrantes (cadastro, avaliação, etc...) 
+- [ ] Criar esquema de verificação de presença para eventos presenciais
 - [ ] Area de relatórios e dashboard de BI
 
 ## 💻 Pré-requisitos
