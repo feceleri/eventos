@@ -65,3 +65,4 @@ application/cache/*
 
 application/sessions/
 !application/sessions/index.html
+.env
