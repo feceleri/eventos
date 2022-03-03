@@ -10,17 +10,17 @@
 
 <img src="https://i.imgur.com/dbA85Qz.gif" alt="exemplo imagem">
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> O 'Sistema de Eventos' foi desenvolvido inicialmente para gerenciar as inscrições, acessos e emissão de certificados de eventos transmitidos de forma online. Atualmente, notou-se a necessidade de ampliar suas funcionalidades para englobar todo o gerenciamento de eventos presencial e online, desde as inscrições a ministrantes, avaliações, presença, etc...
 
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] Tarefa 3
-- [x] Tarefa 4
-- [ ] Tarefa 5
+- [] Criar cadastro de eventos integrando com a agenda de eventos do portal
+- [] Integrar cadastro e login usuários com o E-Cat
+- [] Criar modulo de gerenciamento de ministrantes (cadastro, avaliação, etc...) 
+- [] Criar esquema de verificação de presença para eventos presenciais
+- [ ] Area de relatórios e dashboard de BI
 
 ## 💻 Pré-requisitos
 
