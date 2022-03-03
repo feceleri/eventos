@@ -21,6 +21,10 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Criar modulo de gerenciamento de ministrantes (cadastro, avaliação, etc...) 
 - [ ] Criar esquema de verificação de presença para eventos presenciais
 - [ ] Area de relatórios e dashboard de BI
+- [ ] Efetuar o cancelamento de inscrição, individual e em massa
+- [ ] Envio de confirmação/informação para usuário (Inscreveu/Cancelou/Alterou a Data)
+- [ ] Cadastro de Certificados e relacionamento com o evento.
+- [ ] Autentificação de Certificados (QR-Code).
 
 ## 💻 Pré-requisitos
 
