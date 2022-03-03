@@ -48,21 +48,21 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPHost = 'cloud.farmaceuticosp.com.br';
+    public $SMTPHost = '';
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser = 'paf@farmaceuticosp.com.br';
+    public $SMTPUser = '';
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass = 'paf6933@';
+    public $SMTPPass = '';
 
     /**
      * SMTP Port

@@ -144,77 +144,6 @@ class PdfController extends Controller
         }
     }
 
-
-    // public function enviarCampanha()
-    // {
-    //     $mail = \Config\Services::email();
-
-    //     $user['email'] = 'felipeceleri@gmail.com';
-    //     $user['firstname'] = 'Felipe';
-
-
-    //     $config['protocol'] = 'mail'; // or 'smtp'
-    //     $config['mailType'] = 'html'; // or 'text'
-    //     $config['SMTPHost'] = 'cloud.farmaceuticosp.com.br';
-    //     $config['SMTPUser'] = 'contato@farmaceuticosp.com.br';
-    //     $config['SMTPPass'] = 'crf6933@';
-    //     // $config['SMTPCrypto'] = 'tls'; // 'ssl' or 'tls'
-    //     $config['SMTPPort'] = 587;
-
-    //     $mail->initialize($config);
-
-    //     $to = $user['email'];
-    //     $mail->setFrom($mail->SMTPUser, 'Eventos CRF');
-    //     $mail->setTo($to, $user['firstname']);
-    //     $mail->setSubject('Inscrição Efetuada...');
-
-    //     $message = "
-    //             Prezado(a) " . $user['firstname'] . ",<br><br>\n
-    //             Confirmamos o seu cadastro na plataforma de eventos virtuais do CRF-SP. <br><br>\n
-    //             Informamos que, para assistir os eventos e emitir o certificado de participação, você deverá::<br>\n
-    //             1) Estar inscrito no evento. Dentro da plataforma, escolha o evento e clique em inscrever-se. <br>\n
-    //             2) Logar, nos dias do evento no link " . base_url() . " (o mesmo que se inscreveu), informando e-mail e senha, que funcionará como  lista de presença virtual<br>\n            
-    //             3) Assistir o evento de forma síncrona (no dia e horário do evento, ao vivo). <br><br>\n            
-                 
-    //             Solicitamos, ainda, que não divulguem o link gerado pelo YouTube após entrar no evento, evitando que participantes não inscritos assistam o evento sem identificação e, consequentemente, sem direito ao certificado de participação. <br><br>\n
-               
-    //             Login: " . $user['email'] . "<br>
-    
-    //             Qualquer dúvida, estamos à disposição.\n<br>
-                
-    //             Atenciosamente,\n<br>
-    //             Conselho Regional de Farmácia do Estado de São Paulo<br>
-    //             eventos@crfsp.org.br<br>
-    //             (11) 3067.1450 <br>
-    //             www.crfsp.org.br";
-
-    //     $html = "MEU PDF";
-    //     $options = new Options();
-    //     $options->set('isHtml5ParserEnabled', true);
-    //     $options->set('isRemoteEnabled', true);
-
-    //     $pdf = new \Dompdf\Dompdf($options);
-    //     $pdf->loadHtml($html);
-    //     $pdf->setPaper('A4', 'landscape');
-    //     $pdf->set_option('isRemoteEnabled', TRUE);
-    //     $pdf->render();
-    //     $output = $pdf->output();
-    //     // ob_clean();
-    //     // header("Content-Type: application/pdf");
-
-
-    //     $mail->attach($output, 'application/pdf', 'output.pdf', false);
-
-    //     $mail->setMessage($message);
-    //     // $mail->Body = $message;
-
-    //     if (!$mail->send()) {
-    //         return false;
-    //     } else {
-    //         return true;
-    //     }
-    // }
-
     public function visualizarCampanha($data = null)
     {
 
@@ -268,12 +197,12 @@ class PdfController extends Controller
                 $options->set('isHtml5ParserEnabled', true);
                 $options->set('isRemoteEnabled', true);
         
-                $config['protocol'] = 'mail'; // or 'smtp'
-                $config['mailType'] = 'html'; // or 'text'
-                $config['SMTPHost'] = 'cloud.farmaceuticosp.com.br';
-                $config['SMTPUser'] = 'contato@farmaceuticosp.com.br';
-                $config['SMTPPass'] = 'crf6933@';
-                $config['SMTPPort'] = 587;
+                $config['protocol'] = getenv('protocol');
+                $config['mailType'] = getenv('mailType');
+                $config['SMTPHost'] = getenv('SMTPHost');
+                $config['SMTPUser'] = getenv('SMTPUser');
+                $config['SMTPPass'] = getenv('SMTPPass');
+                $config['SMTPPort'] = getenv('SMTPPort');
 
                 
                 $mail->initialize($config);

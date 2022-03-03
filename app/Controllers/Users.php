@@ -87,13 +87,13 @@ class Users extends BaseController
     {
         $mail = \Config\Services::email();
 
-        $config['protocol'] = 'mail'; // or 'smtp'
-        $config['mailType'] = 'html'; // or 'text'
-        $config['SMTPHost'] = 'cloud.farmaceuticosp.com.br';
-        $config['SMTPUser'] = 'contato@farmaceuticosp.com.br';
-        $config['SMTPPass'] = 'crf6933@';
-        // $config['SMTPCrypto'] = 'tls'; // 'ssl' or 'tls'
-        // $config['SMTPPort'] = 587;
+        $config['protocol'] = getenv('protocol');
+        $config['mailType'] = getenv('mailType');
+        $config['SMTPHost'] = getenv('SMTPHost');
+        $config['SMTPUser'] = getenv('SMTPUser');
+        $config['SMTPPass'] = getenv('SMTPPass');
+        // $config['SMTPCrypto'] = getenv('SMTPCrypto');
+        // $config['SMTPPort'] = getenv('SMTPPort');
 
         $mail->initialize($config);
 
@@ -213,12 +213,12 @@ class Users extends BaseController
         if ($modeltoken->save($novo)) {
 
             $mail = \Config\Services::email();
-            $config['SMTPPort'] = 587;
-            $config['SMTPTimeout'] = 20;
-            $config['SMTPHost']  = 'cloud.farmaceuticosp.com.br';
-            $config['SMTPUser'] = "contato@farmaceuticosp.com.br";
-            $config['SMTPPass'] = "crf6933@";
-            $config['mailType'] = 'html';
+            $config['SMTPPort'] = getenv('SMTPPort');
+            $config['SMTPTimeout'] = getenv('SMTPTimeout');
+            $config['SMTPHost']  = getenv('SMTPHost');
+            $config['SMTPUser'] = getenv('SMTPUser');
+            $config['SMTPPass'] = getenv('SMTPPass');
+            $config['mailType'] = getenv('mailType');
 
             $mail->initialize($config);
 
