@@ -1,0 +1,39 @@
+ERROR - 2021-06-14 08:19:16 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2021-06-14 08:26:22 --> Segmento do URI da Requisição está fora do intervalo: 4
+#0 C:\wamp\www\eventosonline\eventos\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(371): CodeIgniter\HTTP\URI->getSegment(4)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->edituser()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-14 08:58:17 --> Undefined index: resumo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\excluirevent.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 31, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('excluirevent', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(175): view('excluirevent')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->alterareventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-14 08:58:27 --> Undefined index: resumo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\listeventos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 28, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('listeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(43): view('listeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->listar()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-14 08:58:30 --> Undefined index: imagem
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 36, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(25): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,360 @@
+ERROR - 2021-05-14 06:40:10 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2021-05-14 06:40:10 --> Unable to connect to the database.
+#0 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp\www\eventosonline\eventos\system\Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp\www\eventosonline\eventos\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#4 C:\wamp\www\eventosonline\eventos\system\Validation\Validation.php(325): App\Validation\UserRules->validateUser('24862486', 'email,senha', Array, NULL)
+#5 C:\wamp\www\eventosonline\eventos\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('senha', 'senha', '24862486', Array, Array)
+#6 C:\wamp\www\eventosonline\eventos\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(45): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->index()
+#9 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-05-14 06:40:25 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2021-05-14 06:40:25 --> Unable to connect to the database.
+#0 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp\www\eventosonline\eventos\system\Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp\www\eventosonline\eventos\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#4 C:\wamp\www\eventosonline\eventos\system\Validation\Validation.php(325): App\Validation\UserRules->validateUser('24862486', 'email,senha', Array, NULL)
+#5 C:\wamp\www\eventosonline\eventos\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('senha', 'senha', '24862486', Array, Array)
+#6 C:\wamp\www\eventosonline\eventos\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(45): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->index()
+#9 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-05-14 06:41:09 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2021-05-14 06:41:09 --> Unable to connect to the database.
+#0 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp\www\eventosonline\eventos\system\Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp\www\eventosonline\eventos\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#4 C:\wamp\www\eventosonline\eventos\system\Validation\Validation.php(325): App\Validation\UserRules->validateUser('24862486', 'email,senha', Array, NULL)
+#5 C:\wamp\www\eventosonline\eventos\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('senha', 'senha', '24862486', Array, Array)
+#6 C:\wamp\www\eventosonline\eventos\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(45): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->index()
+#9 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-05-14 08:11:59 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2021-05-14 08:11:59 --> Unable to connect to the database.
+#0 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\wamp\www\eventosonline\eventos\system\Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\wamp\www\eventosonline\eventos\app\Validation\UserRules.php(12): CodeIgniter\Model->first()
+#4 C:\wamp\www\eventosonline\eventos\system\Validation\Validation.php(325): App\Validation\UserRules->validateUser('24862486', 'email,senha', Array, NULL)
+#5 C:\wamp\www\eventosonline\eventos\system\Validation\Validation.php(189): CodeIgniter\Validation\Validation->processRules('senha', 'senha', '24862486', Array, Array)
+#6 C:\wamp\www\eventosonline\eventos\system\Controller.php(219): CodeIgniter\Validation\Validation->run()
+#7 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(45): CodeIgniter\Controller->validate(Array, Array)
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->index()
+#9 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#10 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-05-14 09:51:26 --> syntax error, unexpected '}', expecting end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/tdeventos')
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/tdeventos')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-14 09:51:46 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Tdeventos.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 11, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Tdeventos->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tdeventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-14 09:51:59 --> Undefined variable: title
+#0 C:\wamp\www\eventosonline\eventos\app\Views\templates\header.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 27, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Tdeventos.php(11): view('templates/heade...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Tdeventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tdeventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-14 09:52:08 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Tdeventos.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 11, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Tdeventos->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tdeventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-14 11:40:40 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(414): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 414, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-14 11:40:56 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(414): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 414, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-14 11:41:23 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:42:23 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:42:38 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:42:49 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:42:59 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:43:13 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:43:59 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:44:02 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:44:02 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:44:03 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:44:12 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:58:33 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:59:20 --> syntax error, unexpected '?>'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(418): view('tdeventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->tdeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 11:59:44 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:00:01 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:01:58 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:02:57 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:03:12 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:03:19 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('edituser', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(431): view('edituser', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->edituser()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 12:04:47 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('edituser', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(431): view('edituser', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->edituser()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 12:05:16 --> Undefined variable: options_paises
+#0 C:\wamp\www\eventosonline\eventos\app\Views\edituser.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 171, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('edituser', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(431): view('edituser', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->edituser()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-14 12:09:18 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:10:29 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:11:00 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('caduser', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(520): view('caduser', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->caduser()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-14 12:13:15 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:13:38 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:17:32 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:24:29 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:27:13 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-14 12:27:18 --> Arquivo inválido: cadeventos.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadeventos.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadeventos', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(495): view('cadeventos', Array)
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->cadeventos()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}

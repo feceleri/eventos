@@ -1,0 +1,220 @@
+CRITICAL - 2022-02-03 14:05:25 --> syntax error, unexpected '{'
+#0 C:\wamp\www\portal\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\por...')
+#1 C:\wamp\www\portal\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\portal\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 14:05:49 --> syntax error, unexpected '$newData' (T_VARIABLE)
+#0 C:\wamp\www\portal\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\por...')
+#1 C:\wamp\www\portal\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\portal\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 14:06:15 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+#0 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#1 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-03 14:06:44 --> Cannot access protected property CodeIgniter\HTTP\Files\UploadedFile::$originalName
+#0 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#1 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-03 14:09:55 --> DOMDocument::load(): I/O warning : failed to load external entity &quot;file:/C:/wamp/www/portal/eventos/teste.xml&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 30, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(30): DOMDocument->load('C:\\wamp\\www\\por...')
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:10:05 --> DOMDocument::load(): I/O warning : failed to load external entity &quot;file:/C:/wamp/www/portal/eventos/teste.xml&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 30, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(30): DOMDocument->load('teste.xml')
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:11:24 --> DOMDocument::load(): I/O warning : failed to load external entity &quot;file:/C:/wamp/www/portal/eventos/teste.xml&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 30, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(30): DOMDocument->load('teste.xml', 64)
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:11:42 --> DOMDocument::load(): I/O warning : failed to load external entity &quot;file:/C:/wamp/www/portal/eventos/teste.xml&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 31, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(31): DOMDocument->load('teste.xml', 64)
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:15:05 --> DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 1
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 34, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(34): DOMDocument->loadXML('teste.xml', 6)
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:15:28 --> DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 1
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 31, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(31): DOMDocument->loadXML('teste.xml', 6)
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:15:43 --> DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 1
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 31, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(31): DOMDocument->loadXML('teste.xml')
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:18:41 --> DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 1
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 31, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(31): DOMDocument->loadXML('teste.xml')
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:19:10 --> DOMDocument::load(): I/O warning : failed to load external entity &quot;file:/C:/wamp/www/portal/eventos/teste.xml&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 31, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(31): DOMDocument->load('teste.xml')
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:21:22 --> DOMDocument::load(): I/O warning : failed to load external entity &quot;file:/C:/wamp/www/portal/eventos/teste.xml&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 31, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(31): DOMDocument->load('teste.xml')
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:22:37 --> DOMDocument::load(): I/O warning : failed to load external entity &quot;file:/C:/wamp/www/portal/eventos/teste.xml&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 31, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(31): DOMDocument->load('teste.xml', 64)
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:24:01 --> DOMDocument::load(): I/O warning : failed to load external entity &quot;file:/C:/wamp/www/portal/eventos/teste.xml&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 31, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(31): DOMDocument->load('teste.xml', 70)
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:26:58 --> simplexml_load_file(): I/O warning : failed to load external entity &quot;teste.xml&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'simplexml_load_...', 'C:\\wamp\\www\\por...', 33, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(33): simplexml_load_file('teste.xml')
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:28:38 --> DOMDocument::load(): I/O warning : failed to load external entity &quot;file:/C:/wamp/www/portal/eventos/%0A%20%0A%20%0A%20%0A%20%0A%20%0A&quot;
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 35, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(35): DOMDocument->load('\n \n \n \n \n \n', 70)
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:29:13 --> DOMDocument::loadXML(): Start tag expected, '&lt;' not found in Entity, line: 7
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'DOMDocument::lo...', 'C:\\wamp\\www\\por...', 35, Array)
+#1 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(35): DOMDocument->loadXML('\n \n \n \n \n \n', 70)
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-03 14:37:22 --> syntax error, unexpected '=', expecting ';'
+#0 C:\wamp\www\portal\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\por...')
+#1 C:\wamp\www\portal\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\portal\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-03 14:42:10 --> Undefined property: App\Controllers\Campanhas::$db
+#0 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp\\www\\por...', 53, Array)
+#1 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-03 14:47:55 --> Array to string conversion
+#0 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp\\www\\por...', 57, Array)
+#1 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-03 17:06:56 --> Call to a member function move() on null
+#0 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(55): App\Controllers\Campanhas->upload_image(NULL)
+#1 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#2 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#3 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-02-03 17:24:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`campanhas`, CONSTRAINT `FK_campanhas_users` FOREIGN KEY (`created_by`) REFERENCES `users` (`id`)) in C:\wamp\www\portal\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\portal\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ca...')
+#1 C:\wamp\www\portal\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\wamp\www\portal\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\wamp\www\portal\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\wamp\www\portal\eventos\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp\www\portal\eventos\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(66): CodeIgniter\Model->save(Array)
+#7 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#8 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#9 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-03 17:24:03 --> Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`campanhas`, CONSTRAINT `FK_campanhas_users` FOREIGN KEY (`created_by`) REFERENCES `users` (`id`))
+#0 C:\wamp\www\portal\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ca...')
+#1 C:\wamp\www\portal\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\wamp\www\portal\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\wamp\www\portal\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\wamp\www\portal\eventos\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp\www\portal\eventos\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\wamp\www\portal\eventos\app\Controllers\Campanhas.php(66): CodeIgniter\Model->save(Array)
+#7 C:\wamp\www\portal\eventos\system\CodeIgniter.php(918): App\Controllers\Campanhas->index()
+#8 C:\wamp\www\portal\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Campanhas))
+#9 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-02-03 17:25:29 --> syntax error, unexpected ';', expecting ']'
+#0 C:\wamp\www\portal\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\por...')
+#1 C:\wamp\www\portal\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\portal\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\portal\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\portal\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\portal\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}

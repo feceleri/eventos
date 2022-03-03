@@ -1,0 +1,207 @@
+CRITICAL - 2021-07-23 09:10:07 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 135, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 09:19:39 --> Illegal string offset 'id'
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp\\www\\eve...', 136, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(317): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 09:19:57 --> Illegal string offset 'assinatura'
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp\\www\\eve...', 136, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(317): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 09:21:42 --> syntax error, unexpected end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-23 09:44:47 --> syntax error, unexpected 'echo' (T_ECHO)
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-23 09:44:58 --> Illegal string offset 'id'
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp\\www\\eve...', 164, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 09:45:09 --> Illegal string offset 'assinatura'
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp\\www\\eve...', 164, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-07-23 09:48:33 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2021-07-23 09:50:13 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+CRITICAL - 2021-07-23 09:59:42 --> Undefined variable: tipo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 141, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 09:59:55 --> Undefined variable: ass
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 141, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 10:01:25 --> Undefined variable: ass
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 140, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 10:01:25 --> Undefined variable: ass
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 140, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 10:01:26 --> Undefined variable: ass
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 140, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 10:01:26 --> Undefined variable: ass
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 140, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 10:01:46 --> Undefined variable: asss
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 140, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 10:01:55 --> Undefined variable: ass
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarEventos.php(140): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 140, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarEventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(316): view('editarEventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editarEventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 10:06:12 --> Undefined variable: tipos
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarUser.php(206): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 206, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarUser', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(450): view('editarUser', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->editarUser()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 10:06:25 --> Undefined variable: tipo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarUser.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 209, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarUser', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(450): view('editarUser', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->editarUser()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 10:09:49 --> Undefined variable: tipo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editarUser.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 215, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editarUser', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(450): view('editarUser', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->editarUser()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-23 11:21:07 --> Undefined variable: assinatura
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 90, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(105): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(85): App\Controllers\PdfController->gerarCertificado(Array)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('38')
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-23 11:46:07 --> Undefined variable: background_url
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 116, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(105): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(85): App\Controllers\PdfController->gerarCertificado(Array)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('38')
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-23 11:49:42 --> Illegal string offset 'firstname'
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp\\www\\eve...', 74, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('42')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}

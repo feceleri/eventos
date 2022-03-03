@@ -1,0 +1,555 @@
+CRITICAL - 2021-07-05 08:57:08 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 94, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(33): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:00:29 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 94, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(33): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:00:33 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 94, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(33): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:11:04 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 94, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(33): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-07-05 09:11:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`certificado`, CONSTRAINT `FK_certificado_eventos` FOREIGN KEY (`idEvento`) REFERENCES `eventos` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ce...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ce...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ce...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ce...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Models\EventoModel.php(58): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(54): App\Models\EventoModel->certificado('5114', '161')
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('161')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-05 09:11:11 --> Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`certificado`, CONSTRAINT `FK_certificado_eventos` FOREIGN KEY (`idEvento`) REFERENCES `eventos` (`id`))
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ce...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ce...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ce...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ce...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Models\EventoModel.php(58): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(54): App\Models\EventoModel->certificado('5114', '161')
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('161')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-05 09:11:20 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`certificado`, CONSTRAINT `FK_certificado_eventos` FOREIGN KEY (`idEvento`) REFERENCES `eventos` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ce...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ce...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ce...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ce...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Models\EventoModel.php(58): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(54): App\Models\EventoModel->certificado('5114', '161')
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('161')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-05 09:11:20 --> Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`certificado`, CONSTRAINT `FK_certificado_eventos` FOREIGN KEY (`idEvento`) REFERENCES `eventos` (`id`))
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ce...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ce...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ce...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ce...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Models\EventoModel.php(58): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(54): App\Models\EventoModel->certificado('5114', '161')
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('161')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-07-05 09:11:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`certificado`, CONSTRAINT `FK_certificado_eventos` FOREIGN KEY (`idEvento`) REFERENCES `eventos` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ce...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ce...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ce...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ce...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Models\EventoModel.php(58): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(54): App\Models\EventoModel->certificado('5114', '1611')
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('1611')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-05 09:11:48 --> Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`certificado`, CONSTRAINT `FK_certificado_eventos` FOREIGN KEY (`idEvento`) REFERENCES `eventos` (`id`))
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ce...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ce...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ce...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ce...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Models\EventoModel.php(58): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(54): App\Models\EventoModel->certificado('5114', '1611')
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('1611')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-05 09:19:14 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 94, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(33): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:28:14 --> Undefined variable: firstname
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 93, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:30:25 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:31:59 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:32:07 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:32:31 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:33:43 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:36:23 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:39:48 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(33): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:45:04 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 09:59:11 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 10:01:16 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 10:02:02 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 94, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 10:09:31 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 94, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 10:09:35 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 94, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 10:10:13 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 97, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 10:11:03 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 97, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 10:11:40 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 97, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 10:13:39 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificado.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 95, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificado', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(34): view('certificado', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->verCertificado()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 11:34:58 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 56, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->gerarCertificado()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 11:35:09 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 56, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->gerarCertificado()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 11:35:11 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 56, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->gerarCertificado()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 11:35:11 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 56, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->gerarCertificado()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 11:57:51 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 29, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 11:58:20 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 29, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 11:58:21 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 29, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 11:58:21 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 29, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 11:58:21 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 29, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 11:58:21 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 29, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-05 12:02:48 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 100, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(44): view('certificadoVizu...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:02:58 --> Array to string conversion
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp\\www\\eve...', 100, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(44): view('certificadoVizu...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:04:35 --> Undefined variable: _SESSION
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 99, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(43): view('certificadoVizu...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:04:42 --> Undefined variable: _SESSION
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 99, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(43): view('certificadoVizu...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:05:02 --> Undefined variable: _SESSION
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 99, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(43): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:14:23 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(101): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 101, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:14:59 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 103, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:15:01 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 103, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:15:16 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 100, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:25:11 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 105, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:27:23 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 105, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:27:57 --> Undefined index: dtInicio
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 107, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:27:58 --> Undefined index: dtInicio
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 107, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:29:33 --> Undefined index: dtInicio
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 107, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:29:58 --> Undefined variable: id
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 105, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(46): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:31:26 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\wamp\\www\\eve...', 99, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(48): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:43:56 --> Undefined offset: 0
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(105): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\wamp\\www\\eve...', 105, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(48): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-05 12:44:09 --> Undefined variable: dat
+#0 C:\wamp\www\eventosonline\eventos\app\Views\certificadoVizualizacao.php(107): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 107, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('certificadoVizu...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\PdfController.php(48): view('certificadoVizu...', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\PdfController->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,306 @@
+CRITICAL - 2021-06-01 06:36:17 --> Undefined offset: 0
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(387): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\wamp\\www\\eve...', 387, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 06:57:39 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 22, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(23): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 06:57:51 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\listeventos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 28, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('listeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(41): view('listeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->listar()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 06:57:57 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 22, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(23): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 06:58:05 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\listeventos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 28, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('listeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(41): view('listeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->listar()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 07:01:01 --> Undefined index: resumo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\listeventos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 28, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('listeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(41): view('listeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->listar()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 07:01:07 --> Undefined index: imagem
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 23, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(23): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 07:01:12 --> Undefined index: resumo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\listeventos.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 28, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('listeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(41): view('listeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->listar()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 07:02:34 --> Undefined index: imagem
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 23, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(23): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 07:06:58 --> syntax error, unexpected 'else' (T_ELSE)
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 07:07:31 --> Call to undefined method App\Controllers\Eventos::load()
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 07:08:08 --> Call to undefined function App\Controllers\config_upload()
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 07:16:49 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-06-01 07:40:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`atividade_evento`, CONSTRAINT `FK_atividade_evento_eventos` FOREIGN KEY (`idEvento`) REFERENCES `eventos` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp\www\eventosonline\eventos\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(46): CodeIgniter\Model->save(Array)
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->cadativ()
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#9 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-06-01 07:40:58 --> Cannot add or update a child row: a foreign key constraint fails (`crfsp010_eventos`.`atividade_evento`, CONSTRAINT `FK_atividade_evento_eventos` FOREIGN KEY (`idEvento`) REFERENCES `eventos` (`id`))
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp\www\eventosonline\eventos\system\Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(46): CodeIgniter\Model->save(Array)
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->cadativ()
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#9 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-06-01 07:52:08 --> syntax error, unexpected 'return' (T_RETURN), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 07:52:41 --> syntax error, unexpected 'return' (T_RETURN), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 07:52:48 --> syntax error, unexpected 'return' (T_RETURN), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 07:54:33 --> Undefined variable: db
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 133, Array)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-01 07:55:46 --> Undefined variable: model
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 133, Array)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-01 07:56:00 --> Call to undefined function App\Controllers\insert()
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-01 07:57:05 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(136): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-01 07:57:05 --> Unknown column 'name' in 'field list'
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(136): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-01 08:34:47 --> Undefined variable: validação
+#0 C:\wamp\www\eventosonline\eventos\app\Views\cadativ.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 104, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadativ', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(57): view('cadativ', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->cadativ()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 08:47:20 --> syntax error, unexpected 'this' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-01 08:48:23 --> Call to a member function getError() on null
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 08:48:57 --> Call to a member function getError() on null
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 08:51:31 --> Call to a member function getError() on null
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 08:51:47 --> Call to a member function getRandomName() on null
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 08:52:06 --> Call to a member function getRandomName() on null
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 08:52:44 --> Call to a member function getRandomName() on null
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-01 11:56:33 --> Too few arguments to function App\Controllers\Eventos::upload_image(), 0 passed in C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->upload_image()
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-01 12:06:15 --> Too few arguments to function App\Controllers\Eventos::upload_image(), 0 passed in C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->upload_image()
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-01 12:09:38 --> Too few arguments to function App\Controllers\Eventos::upload_image(), 0 passed in C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->upload_image()
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}

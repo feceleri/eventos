@@ -1,0 +1,271 @@
+CRITICAL - 2021-12-13 10:40:05 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:46:42 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:48:37 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:49:20 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:51:45 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:51:53 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:52:17 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:52:30 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:54:43 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:54:47 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:54:49 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 13:59:03 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 14:01:37 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 14:02:17 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 14:08:19 --> unlink(/home/crfsp010/public_html/eventos/writable/debugbar/debugbar_1639415066.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/home/cr...', '/home/crfsp010/...', 106, Array)
+#1 /home/crfsp010/public_html/eventos/system/Debug/Toolbar/Collectors/History.php(106): unlink('/home/crfsp010/...')
+#2 /home/crfsp010/public_html/eventos/system/Debug/Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1639415298, 20)
+#3 /home/crfsp010/public_html/eventos/system/Debug/Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 /home/crfsp010/public_html/eventos/app/Config/Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 /home/crfsp010/public_html/eventos/system/Events/Events.php(188): call_user_func(Object(Closure))
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-13 14:19:16 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 14:24:04 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 14:25:42 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 14:27:18 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 17:06:11 --> unlink(/home/crfsp010/public_html/eventos/writable/debugbar/debugbar_1639425407.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/home/cr...', '/home/crfsp010/...', 106, Array)
+#1 /home/crfsp010/public_html/eventos/system/Debug/Toolbar/Collectors/History.php(106): unlink('/home/crfsp010/...')
+#2 /home/crfsp010/public_html/eventos/system/Debug/Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1639425950, 20)
+#3 /home/crfsp010/public_html/eventos/system/Debug/Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 /home/crfsp010/public_html/eventos/app/Config/Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 /home/crfsp010/public_html/eventos/system/Events/Events.php(188): call_user_func(Object(Closure))
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-13 17:40:21 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 17:40:41 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 17:41:30 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 17:54:12 --> unlink(/home/crfsp010/public_html/eventos/writable/debugbar/debugbar_1639428611.json): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/home/cr...', '/home/crfsp010/...', 106, Array)
+#1 /home/crfsp010/public_html/eventos/system/Debug/Toolbar/Collectors/History.php(106): unlink('/home/crfsp010/...')
+#2 /home/crfsp010/public_html/eventos/system/Debug/Toolbar.php(483): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles(1639428837, 20)
+#3 /home/crfsp010/public_html/eventos/system/Debug/Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#4 /home/crfsp010/public_html/eventos/app/Config/Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#5 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#6 /home/crfsp010/public_html/eventos/system/Events/Events.php(188): call_user_func(Object(Closure))
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#8 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-13 18:17:37 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 18:22:19 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 18:35:35 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 18:36:16 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 19:25:06 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 19:25:13 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 21:57:27 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 21:57:33 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 21:57:40 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 21:58:11 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 22:31:43 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 22:36:45 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-13 23:19:22 --> Undefined offset: 0
+#0 /home/crfsp010/public_html/eventos/app/Controllers/Users.php(369): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', '/home/crfsp010/...', 369, Array)
+#1 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Users->recuperacaoSenha()
+#2 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}

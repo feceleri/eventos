@@ -1,0 +1,285 @@
+CRITICAL - 2021-06-30 07:14:49 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 11, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(24): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 07:31:26 --> Undefined variable: evento
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 12, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(23): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 07:32:40 --> Undefined variable: id
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 12, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(23): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 07:32:53 --> Undefined index: id
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 12, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(23): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 07:33:58 --> Undefined variable: id
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 12, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(23): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 07:39:24 --> Undefined index: id
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 12, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(23): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 07:44:22 --> Argument 1 passed to CodeIgniter\Model::findAll() must be of the type int, string given, called in C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php on line 22
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(22): CodeIgniter\Model->findAll('')
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 07:45:51 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php on line 27
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(27): view('atividades', NULL)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 07:46:00 --> Segmento do URI da Requisição está fora do intervalo: 4
+#0 C:\wamp\www\eventosonline\eventos\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(18): CodeIgniter\HTTP\URI->getSegment(4)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-30 07:46:09 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php on line 27
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(27): view('atividades', NULL)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 07:48:24 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php on line 28
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(28): view('atividades', NULL)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 07:53:16 --> syntax error, unexpected '{', expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 07:56:26 --> Undefined variable: title
+#0 C:\wamp\www\eventosonline\eventos\app\Views\templates\header.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 29, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(47): view('templates/heade...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 08:07:57 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php on line 27
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(27): view('atividades', NULL)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 09:31:33 --> Argument 2 passed to view() must be of the type array, null given, called in C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php on line 27
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(27): view('atividades', NULL)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 10:13:07 --> Call to undefined method App\Models\AtividadeModel::findById
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(20): CodeIgniter\Model->__call('findById', Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 10:13:16 --> Call to undefined method App\Models\AtividadeModel::findById
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(20): CodeIgniter\Model->__call('findById', Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 10:13:51 --> Segmento do URI da Requisição está fora do intervalo: 4
+#0 C:\wamp\www\eventosonline\eventos\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(18): CodeIgniter\HTTP\URI->getSegment(4)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-30 10:13:58 --> Segmento do URI da Requisição está fora do intervalo: 4
+#0 C:\wamp\www\eventosonline\eventos\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(18): CodeIgniter\HTTP\URI->getSegment(4)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-30 10:14:08 --> Call to undefined method App\Models\AtividadeModel::findById
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(22): CodeIgniter\Model->__call('findById', Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 10:16:44 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\wamp\\www\\eve...', 13, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(25): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 10:21:35 --> count(): Parameter must be an array or an object that implements Countable
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', 'C:\\wamp\\www\\eve...', 15, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(25): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 10:21:59 --> Illegal string offset 'titulo'
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp\\www\\eve...', 19, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(25): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 10:26:16 --> Segmento do URI da Requisição está fora do intervalo: 4
+#0 C:\wamp\www\eventosonline\eventos\system\HTTP\URI.php(515): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(18): CodeIgniter\HTTP\URI->getSegment(4)
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-30 10:26:22 --> Argument 1 passed to CodeIgniter\Model::findAll() must be of the type int, string given, called in C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php on line 22
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(22): CodeIgniter\Model->findAll('')
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 10:26:26 --> Argument 1 passed to CodeIgniter\Model::findAll() must be of the type int, string given, called in C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php on line 22
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(22): CodeIgniter\Model->findAll('')
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 10:28:27 --> Undefined variable: query
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 16, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(25): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 10:28:38 --> Call to a member function getResult() on array
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include()
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(25): view('atividades')
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-30 11:14:33 --> Undefined variable: atividades
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 16, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(23): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 11:36:34 --> Argument 1 passed to CodeIgniter\Model::findAll() must be of the type int, string given, called in C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php on line 20
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(20): CodeIgniter\Model->findAll('id')
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-30 11:39:42 --> Illegal string offset 'titulo'
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp\\www\\eve...', 22, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(25): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 12:08:50 --> Illegal string offset 'titulo'
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp\\www\\eve...', 22, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(26): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-30 12:09:43 --> Illegal string offset 'titulo'
+#0 C:\wamp\www\eventosonline\eventos\app\Views\atividades.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\wamp\\www\\eve...', 22, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('atividades', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(26): view('atividades')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,348 @@
+CRITICAL - 2021-06-07 07:00:11 --> syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 07:01:06 --> Too few arguments to function App\Controllers\Eventos::upload_image(), 0 passed in C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->upload_image()
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-07 07:07:01 --> Too few arguments to function App\Controllers\Eventos::upload_image(), 0 passed in C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->upload_image()
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-07 07:17:52 --> syntax error, unexpected ''profile_image'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE)
+#0 C:\wamp\www\eventosonline\eventos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/Eventos/upload...')
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/Eventos/upload...')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-07 07:18:34 --> syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\wamp\www\eventosonline\eventos\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('/Eventos/upload...')
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('/Eventos/upload...')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-07 07:18:51 --> Too few arguments to function App\Controllers\Eventos::upload_image(), 0 passed in C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->upload_image()
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-07 07:31:41 --> Too few arguments to function App\Controllers\Eventos::upload_image(), 0 passed in C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->upload_image()
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-06-07 07:32:07 --> Undefined property: App\Controllers\Eventos::$solicitação
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp\\www\\eve...', 126, Array)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-07 07:33:03 --> Undefined property: App\Controllers\Eventos::$solicitação
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\wamp\\www\\eve...', 126, Array)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-07 07:34:13 --> Arquivo inválido: file_upload.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('file_upload.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('file_upload', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(135): view('file_upload', Array)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 07:34:58 --> Arquivo inválido: file_upload.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('file_upload.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('file_upload', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(145): view('file_upload')
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 07:35:37 --> Arquivo inválido: file.php
+#0 C:\wamp\www\eventosonline\eventos\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('file.php')
+#1 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('file', Array, true)
+#2 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(135): view('file', Array)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 07:37:44 --> Undefined variable: data
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 16, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(135): view('tdeventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-06-07 07:41:58 --> syntax error, unexpected ''imagem'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 07:42:01 --> syntax error, unexpected ''imagem'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 07:42:04 --> syntax error, unexpected ''imagem'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 07:42:04 --> syntax error, unexpected ''imagem'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 08:07:04 --> syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 08:07:13 --> syntax error, unexpected 'public' (T_PUBLIC), expecting end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 08:14:48 --> syntax error, unexpected ''imagem'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 08:15:18 --> syntax error, unexpected ''imagem'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 08:15:31 --> syntax error, unexpected ''file'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 08:16:13 --> syntax error, unexpected ''file'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 08:16:24 --> syntax error, unexpected ''imagem'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 08:48:14 --> syntax error, unexpected 'de' (T_STRING)
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadevento', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(118): view('cadevento')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-07 08:50:16 --> syntax error, unexpected 'de' (T_STRING)
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadevento', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(118): view('cadevento')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-07 08:50:39 --> syntax error, unexpected 'imageFileType' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$'
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('cadevento', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(118): view('cadevento')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-07 10:08:37 --> syntax error, unexpected ';', expecting ')'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 10:09:17 --> syntax error, unexpected ';', expecting ')'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 10:09:57 --> syntax error, unexpected ';'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 10:10:22 --> syntax error, unexpected ';'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 10:10:49 --> syntax error, unexpected ','
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 10:11:09 --> syntax error, unexpected '$_FILES' (T_VARIABLE)
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 10:11:23 --> syntax error, unexpected ';'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 10:11:59 --> syntax error, unexpected ';'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-07 12:36:26 --> Undefined variable: validateImage
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 145, Array)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-07 12:36:57 --> Undefined variable: response
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(167): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 167, Array)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(93): App\Controllers\Eventos->upload_image(Object(CodeIgniter\HTTP\Files\UploadedFile))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-07 12:53:13 --> Undefined variable: imageFile
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 86, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-06-07 12:55:09 --> Call to a member function move() on array
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->cadeventos()
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}

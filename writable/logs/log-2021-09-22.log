@@ -1,0 +1,1135 @@
+ERROR - 2021-09-22 06:08:17 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 07:44:35 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 08:41:07 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 08:41:38 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 09:01:43 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 09:23:41 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 09:23:55 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 09:55:11 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 10:40:05 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 10:40:29 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 11:15:33 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 11:52:14 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 11:52:53 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 12:37:07 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 12:38:45 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 12:41:40 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 12:43:14 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 13:55:48 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 13:56:31 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 13:57:10 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 13:57:30 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 14:41:57 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 14:42:06 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 14:53:08 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
+ERROR - 2021-09-22 14:53:12 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
+ERROR - 2021-09-22 15:26:55 --> mysqli_sql_exception: Column 'assinatura' cannot be null in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/crfsp010/public_html/eventos/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(231): CodeIgniter\Model->save(Array)
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->cadastrarEventos()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:28:16 --> mysqli_sql_exception: Column 'assinatura' cannot be null in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/crfsp010/public_html/eventos/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(231): CodeIgniter\Model->save(Array)
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->cadastrarEventos()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:28:33 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 15:29:49 --> mysqli_sql_exception: Column 'assinatura' cannot be null in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/crfsp010/public_html/eventos/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(231): CodeIgniter\Model->save(Array)
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->cadastrarEventos()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:36:27 --> mysqli_sql_exception: Column 'assinatura' cannot be null in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/crfsp010/public_html/eventos/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(231): CodeIgniter\Model->save(Array)
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->cadastrarEventos()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:38:27 --> mysqli_sql_exception: Column 'assinatura' cannot be null in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/crfsp010/public_html/eventos/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(231): CodeIgniter\Model->save(Array)
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->cadastrarEventos()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:38:44 --> mysqli_sql_exception: Column 'assinatura' cannot be null in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/crfsp010/public_html/eventos/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(231): CodeIgniter\Model->save(Array)
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->cadastrarEventos()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:39:05 --> mysqli_sql_exception: Column 'assinatura' cannot be null in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/crfsp010/public_html/eventos/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(231): CodeIgniter\Model->save(Array)
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->cadastrarEventos()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:44:41 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 15:45:08 --> mysqli_sql_exception: Column 'assinatura' cannot be null in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/crfsp010/public_html/eventos/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(231): CodeIgniter\Model->save(Array)
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->cadastrarEventos()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:45:19 --> mysqli_sql_exception: Column 'assinatura' cannot be null in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('INSERT INTO `ev...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ev...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ev...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ev...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/crfsp010/public_html/eventos/system/Model.php(574): CodeIgniter\Model->insert(Array, false)
+#6 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(231): CodeIgniter\Model->save(Array)
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->cadastrarEventos()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:48:34 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 15:48:56 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 16:12:03 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 16:35:40 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:36:08 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:36:34 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:37:54 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:38:47 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:39:03 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 16:43:38 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:43:38 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:43:57 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 16:44:42 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:45:43 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:46:02 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:46:51 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:47:08 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:47:24 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:47:36 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:47:58 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 16:56:03 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 16:56:19 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 16:56:33 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
+ERROR - 2021-09-22 17:00:39 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
+ERROR - 2021-09-22 17:38:11 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 17:56:01 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 17:57:07 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 17:57:23 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 18:09:59 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 18:10:56 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 18:11:55 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 18:12:48 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 18:12:54 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 18:36:30 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
+ERROR - 2021-09-22 18:36:44 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 18:37:16 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
+ERROR - 2021-09-22 18:37:26 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 18:38:43 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 18:39:08 --> Email: sendWithSmtp throwed fsockopen(): unable to connect to ssl://cloud.farmaceuticosp.com.br:587 (Connection timed out)
+ERROR - 2021-09-22 19:39:38 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 19:39:41 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 19:41:30 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 19:51:56 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 19:52:16 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(31): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\PdfController->index()
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-09-22 19:52:23 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 20:11:45 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 20:21:19 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 20:50:34 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-09-22 22:15:40 --> mysqli_sql_exception: In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'crfsp010_eventos.atividade_evento.id'; this is incompatible with sql_mode=only_full_group_by in /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php:331
+Stack trace:
+#0 /home/crfsp010/public_html/eventos/system/Database/MySQLi/Connection.php(331): mysqli->query('SELECT *, SUM(H...')
+#1 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, SUM(H...')
+#2 /home/crfsp010/public_html/eventos/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, SUM(H...')
+#3 /home/crfsp010/public_html/eventos/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *, SUM(H...', Array, false)
+#4 /home/crfsp010/public_html/eventos/system/Model.php(506): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/crfsp010/public_html/eventos/app/Models/AtividadeModel.php(89): CodeIgniter\Model->first()
+#6 /home/crfsp010/public_html/eventos/app/Controllers/PdfController.php(79): App\Models\AtividadeModel->horasEvento('8')
+#7 /home/crfsp010/public_html/eventos/app/Controllers/Eventos.php(111): App\Controllers\PdfController->gerarCertificado(Array)
+#8 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(918): App\Controllers\Eventos->gerarCertificado('8')
+#9 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#10 /home/crfsp010/public_html/eventos/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/crfsp010/public_html/eventos/index.php(47): CodeIgniter\CodeIgniter->run()
+#12 {main}

@@ -1,0 +1,507 @@
+CRITICAL - 2021-06-24 07:25:13 --> syntax error, unexpected '{', expecting '('
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 07:26:07 --> syntax error, unexpected ')', expecting '|' or variable (T_VARIABLE)
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-06-24 07:26:52 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 07:26:52 --> Array to string conversion
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(549): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\wamp\\www\\eve...', 549, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-24 07:27:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 07:28:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 07:28:44 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 07:31:15 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 07:37:04 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 07:37:04 --> Cannot use object of type mysqli_sql_exception as array
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-06-24 07:37:24 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 07:37:24 --> Cannot access protected property mysqli_sql_exception::$code
+#0 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-06-24 07:38:47 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 07:39:06 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 07:39:29 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 07:42:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 07:44:23 --> syntax error, unexpected end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('excluiruser', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(527): view('excluiruser')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->excluiruser()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-06-24 07:45:08 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 07:46:11 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_users` FOREIGN KEY (`idUser`) REFERENCES `users` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Users.php(541): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Users->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 08:58:37 --> Undefined variable: hinicial
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editeventos.php(80): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 80, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(214): view('editeventos', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->editeventos()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 09:11:45 --> Undefined variable: atividade
+#0 C:\wamp\www\eventosonline\eventos\app\Views\editativ.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 58, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('editativ', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(120): view('editativ', Array)
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->editativ()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-06-24 09:21:05 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_atividade_evento` FOREIGN KEY (`idAtividade`) REFERENCES `atividade_evento` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(173): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 09:21:05 --> Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_atividade_evento` FOREIGN KEY (`idAtividade`) REFERENCES `atividade_evento` (`id`))
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(173): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 09:23:26 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_atividade_evento` FOREIGN KEY (`idAtividade`) REFERENCES `atividade_evento` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(175): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 09:23:26 --> Undefined index: firstname
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 185, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('1')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-24 09:23:37 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_atividade_evento` FOREIGN KEY (`idAtividade`) REFERENCES `atividade_evento` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(175): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('2')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 09:23:37 --> Undefined index: firstname
+#0 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 185, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('2')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-06-24 09:24:13 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_atividade_evento` FOREIGN KEY (`idAtividade`) REFERENCES `atividade_evento` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(175): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('2')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 09:24:16 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_atividade_evento` FOREIGN KEY (`idAtividade`) REFERENCES `atividade_evento` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(175): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 09:24:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_atividade_evento` FOREIGN KEY (`idAtividade`) REFERENCES `atividade_evento` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(175): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 09:24:57 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_atividade_evento` FOREIGN KEY (`idAtividade`) REFERENCES `atividade_evento` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(175): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-06-24 09:26:02 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`crfsp010_eventos`.`usuario_atividade`, CONSTRAINT `FK_usuario_atividade_atividade_evento` FOREIGN KEY (`idAtividade`) REFERENCES `atividade_evento` (`id`)) in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('DELETE FROM `at...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `at...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `at...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2853): CodeIgniter\Database\BaseConnection->query('DELETE FROM `at...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\system\Model.php(977): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(175): CodeIgniter\Model->delete(Array)
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->deletar('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 09:40:25 --> Undefined variable: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 63, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(26): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 09:40:44 --> Undefined variable: resumo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 69, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(26): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 09:41:33 --> Undefined variable: resumo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 69, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(26): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 09:42:18 --> Undefined variable: resumo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 68, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(26): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 09:42:23 --> Undefined variable: resumo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp\\www\\eve...', 69, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(26): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 09:53:28 --> Undefined index: titulo
+#0 C:\wamp\www\eventosonline\eventos\app\Views\tdeventos.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 63, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(26): view('tdeventos')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 10:29:33 --> Undefined index: descricao
+#0 C:\wamp\www\eventosonline\eventos\app\Views\listativ.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 36, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('listativ', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(141): view('listativ')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->listativ()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 10:31:01 --> Undefined index: descricao
+#0 C:\wamp\www\eventosonline\eventos\app\Views\excluirativ.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 45, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('excluirativ', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Atividades.php(161): view('excluirativ')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Atividades->excluirativ()
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Atividades))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 11:19:09 --> Undefined index: descricao
+#0 C:\wamp\www\eventosonline\eventos\app\Views\lista.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp\\www\\eve...', 35, Array)
+#1 C:\wamp\www\eventosonline\eventos\system\View\View.php(246): include('C:\\wamp\\www\\eve...')
+#2 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('lista', Array, true)
+#3 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(69): view('lista')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->lista('1')
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-06-24 11:36:19 --> syntax error, unexpected end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(26): view('tdeventos')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-24 11:36:31 --> syntax error, unexpected end of file
+#0 C:\wamp\www\eventosonline\eventos\system\Common.php(1119): CodeIgniter\View\View->render('tdeventos', Array, true)
+#1 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(26): view('tdeventos')
+#2 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->index()
+#3 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-06-24 12:41:23 --> syntax error, unexpected '}'
+#0 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\wamp\\www\\eve...')
+#1 C:\wamp\www\eventosonline\eventos\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-06-24 12:42:01 --> mysqli_sql_exception: Column 'idUser' cannot be null in C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php:331
+Stack trace:
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Models\EventoModel.php(31): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(36): App\Models\EventoModel->inscricaoEvento()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->inscrverEvento('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-06-24 12:42:01 --> Column 'idUser' cannot be null
+#0 C:\wamp\www\eventosonline\eventos\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\wamp\www\eventosonline\eventos\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\wamp\www\eventosonline\eventos\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\wamp\www\eventosonline\eventos\app\Models\EventoModel.php(31): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp\www\eventosonline\eventos\app\Controllers\Eventos.php(36): App\Models\EventoModel->inscricaoEvento()
+#6 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(918): App\Controllers\Eventos->inscrverEvento('1')
+#7 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Eventos))
+#8 C:\wamp\www\eventosonline\eventos\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp\www\eventosonline\eventos\index.php(47): CodeIgniter\CodeIgniter->run()
+#10 {main}
