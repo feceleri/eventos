@@ -1,6 +1,6 @@
-<?= $this->extend('default') ?>
+<?= $this->extend('templates/default'); ?>
 
-<?= $this->section('content') ?>
+<?= $this->section('css'); ?>
 <style>
     h1 {
         text-align: center;
@@ -207,7 +207,7 @@
     }
 
     @media only screen and (min-width: 1200px) {
-       
+
 
         .menuUser {
             margin-left: 260px;
@@ -223,7 +223,7 @@
             text-transform: uppercase;
         }
 
-        .evento{
+        .evento {
             margin-left: -50px;
         }
 
@@ -235,11 +235,12 @@
             margin-left: 50px;
             margin-right: 50px;
         }
-        .pesq{
+
+        .pesq {
             margin-left: 50px;
         }
 
-        .campanha{
+        .campanha {
             margin-left: 50px;
         }
     }
@@ -277,10 +278,13 @@
         display: block;
     }
 </style>
+<?= $this->endSection(); ?>
+
+
+<?= $this->section('content') ?>
 <script>
     $msg = "";
 </script>
-
 <main id="t3-content">
     <div class="container">
         <h1>Eventos</h1>
@@ -595,47 +599,49 @@
         </div>
     </div>
 
-    <script>
-        function preenchermodal(id) {
-            var link = '<?php echo (base_url('inicio/inscreverEvento/') . "/"); ?>';
-            document.getElementById("btnConfirmaInscricao").href = link + id;
-        }
 
-        function preenchermodalSobre(resumo) {
-
-            document.getElementById("sobreModalContent").innerHTML = resumo;
-        }
-
-        function atribuir() {
-            var select = document.getElementById('selectUser');
-            var user = select.options[select.selectedIndex].value;
-
-
-        }
-
-        toastr.options = {
-            "closeButton": true,
-            "newestOnTop": false,
-            "progressBar": true,
-            "preventDuplicates": false,
-            "positionClass": "toast-top-right",
-            "onclick": null,
-            "showDuration": "300",
-            "hideDuration": "1000",
-            "timeOut": "5000",
-            "extendedTimeOut": "1000",
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut",
-        }
-
-        if ($msg) {
-            toastr.info($msg);
-        }
-
-        $('#modalInfoTrigger').click();
-
-    </script>
 </main>
+<?= $this->endSection() ?>
+<?= $this->section('js'); ?>
+<script>
+    function preenchermodal(id) {
+        var link = '<?php echo (base_url('inicio/inscreverEvento/') . "/"); ?>';
+        document.getElementById("btnConfirmaInscricao").href = link + id;
+    }
+
+    function preenchermodalSobre(resumo) {
+
+        document.getElementById("sobreModalContent").innerHTML = resumo;
+    }
+
+    function atribuir() {
+        var select = document.getElementById('selectUser');
+        var user = select.options[select.selectedIndex].value;
+
+
+    }
+
+    toastr.options = {
+        "closeButton": true,
+        "newestOnTop": false,
+        "progressBar": true,
+        "preventDuplicates": false,
+        "positionClass": "toast-top-right",
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut",
+    }
+
+    if ($msg) {
+        toastr.info($msg);
+    }
+
+    $('#modalInfoTrigger').click();
+</script>
 <?= $this->endSection() ?>
