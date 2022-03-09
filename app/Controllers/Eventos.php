@@ -297,7 +297,7 @@ class Eventos extends BaseController
                 $rules = [
                     'titulo' => 'trim|required|min_length[3]|max_length[100]',
                     // 'imagem' => 'uploaded[profile_image]', 'mime_in[profile_image,image/jpg,image/jpeg,image/gif,image/png]', 'max_size[profile_image,4096]',
-                    'resumo' => 'trim|required|min_length[0]|max_length[2000]',
+                    'resumo' => 'trim',
                 ];
 
                 if (!$this->validate($rules)) {
@@ -311,7 +311,7 @@ class Eventos extends BaseController
                             $newData = [
                                 'id' => $evento_id,
                                 'titulo' => $this->request->getVar('titulo'),
-                                'resumo' => $this->request->getVar('resumo'),
+                                'resumo' => htmlentities($this->request->getVar('resumo')),
                                 'dtInicio' => date($this->request->getVar('datainicial') . ' ' . $this->request->getVar('hinicial')),
                                 'dtFim' => date($this->request->getVar('datafinal') . ' ' . $this->request->getVar('hfinal')),
                                 'hora' => date('H:i:s', strtotime($this->request->getVar('datainicial') . ' ' . $this->request->getVar('hinicial'))),
@@ -347,7 +347,7 @@ class Eventos extends BaseController
                         $newData = [
                             'id' => $evento_id,
                             'titulo' => $this->request->getVar('titulo'),
-                            'resumo' => $this->request->getVar('resumo'),
+                            'resumo' => htmlentities($this->request->getVar('resumo')),
                             'dtInicio' => date($this->request->getVar('datainicial') . ' ' . $this->request->getVar('hinicial')),
                             'dtFim' => date($this->request->getVar('datafinal') . ' ' . $this->request->getVar('hfinal')),
                             'hora' => date('H:i:s', strtotime($this->request->getVar('datainicial') . ' ' . $this->request->getVar('hinicial'))),
@@ -375,9 +375,9 @@ class Eventos extends BaseController
 
             // var_dump($data);exit;
 
-            echo view('templates/header', $data);
-            echo view('editarEventos', $result);
-            echo view('templates/footer');
+            // echo view('templates/header', $data);
+            echo view('editarEventos', $data);
+            // echo view('templates/footer');
         }
     }
 
@@ -410,10 +410,8 @@ class Eventos extends BaseController
             $data = [
                 'title' => 'Alterar eventos',
                 'data' => $model->orderBy('id','desc')->findAll(),
-            ];
-            echo view('templates/header', $data);
-            echo view('alterarEventos');
-            echo view('templates/footer');
+            ];            
+            echo view('alterarEventos', $data);            
         }
     }
 

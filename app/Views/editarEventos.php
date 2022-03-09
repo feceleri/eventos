@@ -1,4 +1,4 @@
-<?= $this->extend('default') ?>
+<?= $this->extend('templates/default') ?>
 
 <?= $this->section('content') ?>
 
@@ -133,6 +133,7 @@
     <div class="container">
         <div class="message_box">
             <?php
+            // var_dump($data);exit;
             if (isset($success) && strlen($success)) {
                 echo '<div class="success">';
                 echo '<p>' . esc($success) . '</p>';
@@ -155,8 +156,8 @@
                                 <?= session('msg') ?>
                                 <button type="button" class="close" data-dismiss="alert"><span>×</span></button>
                             </div>
-                            <?php echo  $data; ?>
-                            <?php echo $imagem; ?>
+                            <?php echo $data;  ?>
+                            <?php echo $data['imagem']; ?>
                             <?php echo $result; ?>
                         <?php endif ?>
                         <a href="<?= base_url('alterarEventos') ?>">Voltar</a>
@@ -170,52 +171,52 @@
                             <div class="form-group">
                                 <div class="mb-3">
                                     <input class="form-control" onchange="readURL(this);" type="file" name="profile_image" id="formFile" accept="image/*" readonly="true">
-                                    <img id="blah" type="file" alt="imagem" src="<?php echo base_url("public/img") . "/" . $imagem ?>" />
+                                    <img id="blah" type="file" alt="imagem" src="<?php echo base_url("public/img") . "/" . $data['imagem'] ?>" />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-label-group">
-                                    <input type="text" id="titulo" name="titulo" class="form-control" placeholder="titulo" required autofocus value="<?= $titulo ?>">
+                                    <input type="text" id="titulo" name="titulo" class="form-control" placeholder="titulo" required autofocus value="<?= $data['titulo']; ?>">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-label-group">
-                                    <textarea name="resumo" id="resumo" class="form-control" minlength="3" maxlength="1000" placeholder="Resumo" required><?= $resumo ?></textarea>
+                                    <textarea name="resumo" id="resumo" class="form-control" placeholder="Resumo"><?= $data['resumo'] ?></textarea>
                                 </div>
                             </div>
                             <div class="form-group col-sm-6 data" id="inicial">
                                 <div class="form-label-group">
                                     <label for="">Inicial :</label>
-                                    <input type="date" name="datainicial" id="dtAgenda" min="2017-04-01" class="form-control" value="<?php echo date_format(new DateTime($dtInicio), "Y-m-d"); ?>" required />
+                                    <input type="date" name="datainicial" id="dtAgenda" min="2017-04-01" class="form-control" value="<?php echo date_format(new DateTime($data['dtInicio']), "Y-m-d"); ?>" required />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-label-group">
-                                    <input type="time" name="hinicial" id="hora" value="<?php echo date_format(new DateTime($dtInicio), "H:i"); ?>" class="form-control" required />
+                                    <input type="time" name="hinicial" id="hora" value="<?php echo date_format(new DateTime($data['dtInicio']), "H:i"); ?>" class="form-control" required />
                                 </div>
                             </div>
                             <div class="form-group col-sm-6 data1" id="final">
                                 <div class="form-label-group">
                                     <label for="">Final:</label>
-                                    <input type="date" name="datafinal" id="dtAgenda1" min="2017-04-01" value="<?php echo date_format(new DateTime($dtFim), "Y-m-d"); ?>" class="form-control" required />
+                                    <input type="date" name="datafinal" id="dtAgenda1" min="2017-04-01" value="<?php echo date_format(new DateTime($data['dtFim']), "Y-m-d"); ?>" class="form-control" required />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-label-group">
-                                    <input type="time" name="hfinal" id="hora1" class="form-control" value="<?php echo date_format(new DateTime($dtFim), "H:i"); ?>" required />
+                                    <input type="time" name="hfinal" id="hora1" class="form-control" value="<?php echo date_format(new DateTime($data['dtFim']), "H:i"); ?>" required />
 
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-label-group favcolor">
                                     <label for="">Primaria:</label>
-                                    <input type="color" id="favcolor" name="favcolor" value="<?= $corPrimaria ?>" class="form-control" />
+                                    <input type="color" id="favcolor" name="favcolor" value="<?= $data['corPrimaria'] ?>" class="form-control" />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="form-label-group favcolor1">
                                     <label for="">Secundaria:</label>
-                                    <input type="color" id="favcolor" name="favcolor1" value="<?= $corSecundaria ?>" class="form-control" />
+                                    <input type="color" id="favcolor" name="favcolor1" value="<?= $data['corSecundaria'] ?>" class="form-control" />
                                 </div>
                             </div>
                             <div class="form-group col-sm-7">
@@ -223,12 +224,13 @@
 
                                     <select id="assinatura" name="assinatura" class="form-control">
                                         <?php
-                                        foreach ($data as $key => $resultado) {
-                                            $selecionado = $data['assinatura'] == $id;
-                                            if ($selecionado) {
-                                                $assinatura =  $data['assinatura'];
-                                            }
-                                        }
+                                        // foreach ($data as $key => $resultado) {
+                                        //     $selecionado = $data['assinatura'] == $data['id'];
+                                        //     if ($selecionado) {
+                                        //         $assinatura =  $data['assinatura'];
+                                        //     }
+                                        // }
+                                        $assinatura =  $data['assinatura'];
                                         if ($assinatura == 1) {
                                             echo '<option value="1" id="1" selected="selected">Marcos</option>';
                                             echo '<option value="2" id="2">Marcelo</option>';
@@ -252,28 +254,28 @@
                                 <label for="">Destinado:</label>
                                 <div class="form-label-group" required>
                                     <?php
-                                    if (in_array("3", json_decode($destinado))) {
+                                    if (in_array("3", json_decode($data['destinado']))) {
                                         echo '<input type="checkbox" id="checkbox3" name="destinado[]" value="3" checked="checked">
                                         <label for="checkbox3">Farmacêutico inscrito no CRF-SP</label><br>';
                                     } else {
                                         echo '<input type="checkbox" id="checkbox3" name="destinado[]" value="3">
                                         <label for="checkbox3">Farmacêutico inscrito no CRF-SP </label><br>';
                                     }
-                                    if (in_array("2", json_decode($destinado))) {
+                                    if (in_array("2", json_decode($data['destinado']))) {
                                         echo '<input type="checkbox" id="checkbox2" name="destinado[]" value="2" checked="checked">
                                         <label for="checkbox2">Farmacêuticos inscritos em outros estados</label><br>';
                                     } else {
                                         echo '<input type="checkbox" id="checkbox2" name="destinado[]" value="2">
                                         <label for="checkbox2">Farmacêuticos inscritos em outros estados</label><br>';
                                     }
-                                    if (in_array("1", json_decode($destinado))) {
+                                    if (in_array("1", json_decode($data['destinado']))) {
                                         echo '<input type="checkbox" id="checkbox1" name="destinado[]" value="1" checked="checked">
                                         <label for="checkbox1">Estudantes de Farmácia</label><br>';
                                     } else {
                                         echo '<input type="checkbox" id="checkbox1" name="destinado[]" value="1">
                                         <label for="checkbox1">Estudantes de Farmácia</label><br>';
                                     }
-                                    if (in_array("4", json_decode($destinado))) {
+                                    if (in_array("4", json_decode($data['destinado']))) {
                                         echo '<input type="checkbox" id="checkbox4" name="destinado[]" value="4" checked="checked">
                                         <label for="checkbox4">Outros profissionais</label>';
                                     } else {
@@ -286,7 +288,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="form-label-group">
-                                    <input type="text" id="certificado" name="certificado" class="form-control" placeholder="Total de horas" value="<?= $certificado ?>" required autofocus>
+                                    <input type="text" id="certificado" name="certificado" class="form-control" placeholder="Total de horas" value="<?= $data['certificado'] ?>" required autofocus>
                                 </div>
                             </div>
 
@@ -294,12 +296,13 @@
                                 <div class="form-check" name="tipo" required>
                                     <label class="evento" for="">Evento:</label><br>
                                     <?php
-                                    foreach ($data as $key => $resultado) {
-                                        $selecionado = $data['tipo'] == $id;
-                                        if ($selecionado) {
-                                            $tipo = $data['tipo'];
-                                        }
-                                    }
+                                    // foreach ($data as $key => $resultado) {
+                                    //     $selecionado = $data['tipo'] == $data['id'];
+                                    //     if ($selecionado) {
+                                    //         $tipo = $data['tipo'];
+                                    //     }
+                                    // }
+                                    $tipo = $data['tipo'];
                                     if ($tipo == 1) {
                                         echo '<input class="form-check-input " type="radio" id="radio1" name="radio" value="1" checked="checked">
                                               <label class="form-check-label " for="radio1">Exclusivo</label><br>';
@@ -316,7 +319,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="form-label-group">
-                                    <input type="text" id="limite" name="limite" class="form-control" placeholder="Limite de pessoas" value="<?= $limite ?>" required autofocus>
+                                    <input type="text" id="limite" name="limite" class="form-control" placeholder="Limite de pessoas" value="<?= $data['limite'] ?>" required autofocus>
                                 </div>
                             </div>
                             <div class="form-group">

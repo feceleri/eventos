@@ -378,10 +378,10 @@
                             <div class="card-footer text-muted" id="card-footer">
                                 <ul class="nav justify-content-center">
                                     <li class="nav-item">
-                                        <a type="button" id="btnsobreModal" class=" cad2 btn btn-primary" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('<?php echo $evento['resumo']; ?>');">
+                                        <a type="button" id="btnsobreModal" class="cad2 btn btn-primary" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?=$evento['id'] ?>')">
                                             Informações
                                         </a>
-
+                                        <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s','/[^\S ]+\</s','/(\s)+/s','/<!--(.|\s)*?-->/'), array('>','<','\\1',''), $evento['resumo'])); ?>">
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link active cad2" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Atividades</a>
@@ -491,9 +491,10 @@
                             <div class="card-footer text-muted" id="card-footer">
                                 <ul class="nav justify-content-center">
                                     <li class="nav-item">
-                                        <a type="button" id="btnsobreModal" class=" cad2 btn btn-primary encerrado" data-toggle="modal" data-target="#sobreModal">
+                                    <a type="button" id="btnsobreModal" class="cad2 btn btn-primary encerrado" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?=$evento['id'] ?>')">
                                             Informações
                                         </a>
+                                        <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s','/[^\S ]+\</s','/(\s)+/s','/<!--(.|\s)*?-->/'), array('>','<','\\1',''), $evento['resumo'])); ?>">
 
                                     </li>
                                     <li class="nav-item">
@@ -609,9 +610,10 @@
         document.getElementById("btnConfirmaInscricao").href = link + id;
     }
 
-    function preenchermodalSobre(resumo) {
-
-        document.getElementById("sobreModalContent").innerHTML = resumo;
+    function preenchermodalSobre(resumo) {   
+        var hiden = document.getElementById(resumo).value;
+        var texto = $('#sobreModalContent').html(hiden).text();
+        $('#sobreModalContent').html(texto);
     }
 
     function atribuir() {

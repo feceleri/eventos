@@ -1,16 +1,10 @@
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css" />
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
-
-<?= $this->extend('default') ?>
-
-<?= $this->section('content') ?>
+<?= $this->extend('templates/default'); ?>
+<?= $this->section('css'); ?>
+<style>
+    .custom-file-input~.custom-file-label::after {
+        content: "Selecionar";
+    }
+</style>
 <style>
     h2 {
         color: #092e48;
@@ -93,7 +87,7 @@
             text-transform: uppercase;
         }
 
-        .evento{
+        .evento {
             margin-left: -50px;
         }
 
@@ -105,15 +99,21 @@
             margin-left: 50px;
             margin-right: 50px;
         }
-        .pesq{
+
+        .pesq {
             margin-left: 50px;
         }
 
-        .campanha{
+        .campanha {
             margin-left: 50px;
         }
     }
 </style>
+<?= $this->endSection(); ?>
+
+
+<?= $this->section('content') ?>
+
 <script>
     $msg = "";
 </script>
@@ -169,6 +169,8 @@
         ?>
         </div>
 </main>
+<?= $this->endSection() ?>
+<?= $this->section('js'); ?>
 <script>
     $(document).ready(function() {
         $('#tabela').DataTable({
