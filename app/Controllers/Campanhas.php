@@ -23,8 +23,8 @@ class Campanhas extends BaseController
         } else {
             $model = new CampanhaModel();
             $data = [
-                'title' => 'Alterar eventos',
-                'data' => $model->findAll(),
+                'title' => 'Campanhas',
+                'data' => $model->orderBy('id','DESC')->findAll(),
             ];
             echo view('listarCampanhas', $data);
         }

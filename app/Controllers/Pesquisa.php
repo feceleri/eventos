@@ -115,7 +115,7 @@ class Pesquisa extends BaseController
                 if ($model->save($newData)) {
                     $session = session();
                     $session->setFlashdata('success', 'Sua pesquisa foi cadastrada com sucesso!');
-                    var_dump($newData);exit;
+                    // var_dump($newData);exit;
                     return redirect()->to(base_url('listaPesquisa'));
                 } else {
                     echo "Erro ao salvar";

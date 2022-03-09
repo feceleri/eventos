@@ -201,9 +201,9 @@ class Eventos extends BaseController
             if ($this->request->getMethod() == 'post') {
                 //VALIDAÇÕES
                 $rules = [
-                    'titulo' => 'trim|required|min_length[3]|max_length[60]',
+                    'titulo' => 'trim|required|min_length[3]|max_length[100]',
                     'imagem' => 'uploaded[profile_image]', 'mime_in[profile_image,image/jpg,image/jpeg,image/gif,image/png]', 'max_size[profile_image,4096]',
-                    'resumo' => 'trim|required|min_length[3]|max_length[1000]',
+                    'resumo' => 'trim|required|min_length[0]|max_length[2000]',
                 ];
                 if (!$this->validate($rules)) {
                     $data['validation'] = $this->validator;
@@ -295,9 +295,9 @@ class Eventos extends BaseController
 
                 //VALIDAÇÕES
                 $rules = [
-                    'titulo' => 'trim|required|min_length[3]|max_length[60]',
+                    'titulo' => 'trim|required|min_length[3]|max_length[100]',
                     // 'imagem' => 'uploaded[profile_image]', 'mime_in[profile_image,image/jpg,image/jpeg,image/gif,image/png]', 'max_size[profile_image,4096]',
-                    'resumo' => 'trim|required|min_length[3]|max_length[1000]',
+                    'resumo' => 'trim|required|min_length[0]|max_length[2000]',
                 ];
 
                 if (!$this->validate($rules)) {
@@ -401,7 +401,7 @@ class Eventos extends BaseController
     //------------------------------------------------------------------------------
 
     // deleta um eventos
-    public function alterarEventos() //tras a lista de eventos
+    public function alterarEventos() //traz a lista de eventos
     {
         if (!session()->get('isLoggedIn')) {
             return redirect()->to(base_url(''));
@@ -409,7 +409,7 @@ class Eventos extends BaseController
             $model = new EventoModel();
             $data = [
                 'title' => 'Alterar eventos',
-                'data' => $model->findAll(),
+                'data' => $model->orderBy('id','desc')->findAll(),
             ];
             echo view('templates/header', $data);
             echo view('alterarEventos');

@@ -4,40 +4,20 @@
     .custom-file-input~.custom-file-label::after {
         content: "Selecionar";
     }
-    @media only screen and (min-width: 1200px) {
-        .session {
-            margin-left: 150px;
-            text-transform: uppercase;
-        }
-
-        .evento{
-            margin-left: -50px;
-        }
-
-        .menu {
-            margin-left: 200px;
-        }
-
-        .nav2 {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-        .pesq{
-            margin-left: 50px;
-        }
-
-        .campanha{
-            margin-left: 50px;
-        }
-    }
 </style>
 <?= $this->endSection(); ?>
 <?= $this->section('content'); ?>
 <main id="t3-content">
     <div class="container bg-white" style="padding-bottom: 10em;">
         <br>
-        <a href="<?= base_url('listarCampanhas') ?>">Voltar</a>
-        <h2 class="card-title text-center">Cadastro de Campanhas </h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <!-- <li class="breadcrumb-item"><a href="#">Inicio</a></li> -->
+                <li class="breadcrumb-item"><a href="<?= base_url('listarCampanhas') ?>">Campanhas</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cadastrar</li>
+            </ol>
+        </nav>
+        <h2 class="card-title text-center">Cadastro de Campanhas</h2>
         <form class="form-signin" id="file" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <div class="form-label-group">
@@ -56,7 +36,7 @@
                 <li>A primeira linha ser&aacute; identificada como sendo o nome dos campos, por isso &eacute; importante coloc&aacute;-los. Caso n&atilde;o seja, o primeiro registro acabar&aacute; sendo perdido.</li>
                 <li>Evite colocar: caract&eacute;res especiais, assentos ou espa&ccedil;os no nome dos campos. Eles s&atilde;o apenas para nossa identifica&ccedil;&atilde;o, aqui menos &eacute; mais.</li>
                 <li>N&atilde;o deve haver outras tabelas e planilhas no documento.</li>
-                <li>O campo email &eacute; obrigat&oacute;rio, identific&aacute;-lo exatamente assim: "email" sem h&iacute;fen ou espa&ccedil;os.</li>
+                <li>O campo nome e email s&atilde;o obrigat&oacute;rios, identific&aacute;-los exatamente assim:"nome" e "email" sem h&iacute;fen ou espa&ccedil;os.</li>
                 </ul>
                 <h2>Veja abaixo um exemplo de tabela</h2>
                 <table style="border-collapse: collapse; width: 100%; height: 58.7814px;" border="1">
@@ -156,11 +136,10 @@
 
     $(document).ready(function() {
 
-
         var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
         tinymce.init({
-            selector: '#conteudo',
+            selector: 'textarea',
             plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons',
             imagetools_cors_hosts: ['picsum.photos'],
             menubar: 'file edit view insert format tools table help',
@@ -251,101 +230,6 @@
             content_css: useDarkMode ? 'dark' : 'default',
             content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
         });
-
-        tinymce.init({
-            selector: '#mensagem',
-            plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons',
-            imagetools_cors_hosts: ['picsum.photos'],
-            menubar: 'file edit view insert format tools table help',
-            toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
-            toolbar_sticky: true,
-            autosave_ask_before_unload: true,
-            autosave_interval: '30s',
-            autosave_prefix: '{path}{query}-{id}-',
-            autosave_restore_when_empty: false,
-            autosave_retention: '2m',
-            image_advtab: true,
-            link_list: [{
-                    title: 'My page 1',
-                    value: 'https://www.tiny.cloud'
-                },
-                {
-                    title: 'My page 2',
-                    value: 'http://www.moxiecode.com'
-                }
-            ],
-            image_list: [{
-                    title: 'My page 1',
-                    value: 'https://www.tiny.cloud'
-                },
-                {
-                    title: 'My page 2',
-                    value: 'http://www.moxiecode.com'
-                }
-            ],
-            image_class_list: [{
-                    title: 'None',
-                    value: ''
-                },
-                {
-                    title: 'Some class',
-                    value: 'class-name'
-                }
-            ],
-            importcss_append: true,
-            file_picker_callback: function(callback, value, meta) {
-                /* Provide file and text for the link dialog */
-                if (meta.filetype === 'file') {
-                    callback('https://www.google.com/logos/google.jpg', {
-                        text: 'My text'
-                    });
-                }
-
-                /* Provide image and alt text for the image dialog */
-                if (meta.filetype === 'image') {
-                    callback('https://www.google.com/logos/google.jpg', {
-                        alt: 'My alt text'
-                    });
-                }
-
-                /* Provide alternative source and posted for the media dialog */
-                if (meta.filetype === 'media') {
-                    callback('movie.mp4', {
-                        source2: 'alt.ogg',
-                        poster: 'https://www.google.com/logos/google.jpg'
-                    });
-                }
-            },
-            templates: [{
-                    title: 'New Table',
-                    description: 'creates a new table',
-                    content: '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>'
-                },
-                {
-                    title: 'Starting my story',
-                    description: 'A cure for writers block',
-                    content: 'Once upon a time...'
-                },
-                {
-                    title: 'New list with dates',
-                    description: 'New List with dates',
-                    content: '<div class="mceTmpl"><span class="cdate">cdate</span><br /><span class="mdate">mdate</span><h2>My List</h2><ul><li></li><li></li></ul></div>'
-                }
-            ],
-            template_cdate_format: '[Date Created (CDATE): %m/%d/%Y : %H:%M:%S]',
-            template_mdate_format: '[Date Modified (MDATE): %m/%d/%Y : %H:%M:%S]',
-            height: 300,
-            image_caption: true,
-            quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
-            noneditable_noneditable_class: 'mceNonEditable',
-            toolbar_mode: 'sliding',
-            contextmenu: 'link image imagetools table',
-            skin: useDarkMode ? 'oxide-dark' : 'oxide',
-            content_css: useDarkMode ? 'dark' : 'default',
-            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
-        });
-
-
 
     });
 </script>

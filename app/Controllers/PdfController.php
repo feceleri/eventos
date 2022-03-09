@@ -191,6 +191,9 @@ class PdfController extends Controller
             foreach ($data['registro'] as $key => $registro) {    
                 ob_start();
 
+                $userMail = trim($registro->email);
+                $userNome = trim($registro->nome);
+
                 $mail = \Config\Services::email();
 
                 $options = new Options();
@@ -207,7 +210,7 @@ class PdfController extends Controller
                 
                 $mail->initialize($config);
                 $mail->setFrom($mail->SMTPUser, 'Eventos CRF');
-                $mail->setTo($registro->email, $registro->nome);
+                $mail->setTo($userMail, $userNome);
                 $mail->setSubject($data['titulo']);
 
                 $mensagem = html_entity_decode($data['mensagem']);
@@ -244,13 +247,15 @@ class PdfController extends Controller
                 $mail->setMessage($mensagem);
                 $success = $mail->send();                
                 $mail->clear(TRUE);
-                               
+
                 if (!$success) {
-                    $errorMessage = error_get_last()['message'];
-                    var_dump($errorMessage);
-                    var_dump($success);exit;                    
+                    $errorMessage = error_get_last()['message'];                    
+                    $errorMessage .= '<br>Erro ao enviar email para:'. $userMail.' '. $userNome;
+                    echo($errorMessage);
+                    exit;                    
                 }
-               
+
+                ob_clean();               
             }
             return true;
         } catch (\Exception $e) {

@@ -117,7 +117,7 @@
             margin-bottom: 10px;
         }
 
-        @media only screen and (min-width: 1200px) {
+        /* @media only screen and (min-width: 1200px) {
             .session {
                 margin-left: 260px;
                 text-transform: uppercase;
@@ -140,7 +140,34 @@
                 margin-left: 260px;
                 text-transform: uppercase;
             }
+        } */
+
+        @media only screen and (min-width: 1200px) {
+        .session {
+            margin-left: 150px;
+            text-transform: uppercase;
         }
+
+        .evento{
+            margin-left: -50px;
+        }
+
+        .menu {
+            margin-left: 200px;
+        }
+
+        .nav2 {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .pesq{
+            margin-left: 50px;
+        }
+
+        .campanha{
+            margin-left: 50px;
+        }
+    }
     </style>
     <?= $this->renderSection("css"); ?>
 
