@@ -661,7 +661,10 @@
                 contextmenu: 'link image imagetools table',
                 skin: useDarkMode ? 'oxide-dark' : 'oxide',
                 content_css: useDarkMode ? 'dark' : 'default',
-                content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+                content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+                relative_urls: false,
+                remove_script_host: false,
+                convert_urls: false
             });
 
         });

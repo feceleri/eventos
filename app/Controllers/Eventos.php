@@ -201,9 +201,9 @@ class Eventos extends BaseController
             if ($this->request->getMethod() == 'post') {
                 //VALIDAÇÕES
                 $rules = [
-                    'titulo' => 'trim|required|min_length[3]|max_length[100]',
+                    'titulo' => 'trim|required|min_length[3]|max_length[150]',
                     'imagem' => 'uploaded[profile_image]', 'mime_in[profile_image,image/jpg,image/jpeg,image/gif,image/png]', 'max_size[profile_image,4096]',
-                    'resumo' => 'trim|required|min_length[0]|max_length[2000]',
+                    'resumo' => 'trim',
                 ];
                 if (!$this->validate($rules)) {
                     $data['validation'] = $this->validator;

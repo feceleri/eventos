@@ -238,12 +238,12 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="form-label-group">
-                                        <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título" maxlength="60" minilength="3" required autofocus>
+                                        <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Título" maxlength="150" minilength="3" required autofocus>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="form-label-group">
-                                        <textarea name="resumo" id="resumo" class="form-control" minilength="3" maxlength="1000" placeholder="Resumo" required autofocus></textarea>
+                                        <textarea name="resumo" id="resumo" class="form-control" placeholder="Resumo" required autofocus></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-6 data" id="inicial">
@@ -299,16 +299,6 @@
                                         <input type="checkbox" name="destinado[]" value="4">Outros profissionais<br>
                                     </div>
                                 </div>
-                                <!-- <div class="form-group">
-                                    <div class="form-label-group" required>
-                                        <select id="estado" name="estado" class="form-control">
-                                            <option selected disabled>Estado:</option>
-                                            <option value="26">São Paulo</option>
-                                            <option value="100">Todos</option>
-                                        </select>
-                                    </div>
-                                </div> -->
-
                                 <div class="form-group">
                                     <div class="form-label-group">
                                         <input type="text" id="certificado" name="certificado" class="form-control" placeholder="Total de horas" required autofocus>
