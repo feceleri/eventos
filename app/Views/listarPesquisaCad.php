@@ -96,11 +96,11 @@
                                     <td><a href="' . base_url('pesquisa/ocultarAtividade') . "/" . $pesquisa['id'] . '"><i class="fa fa-square-o" aria-hidden="true" style="color: green, margin-left: 15px," id="click"></i></a>';
                                     } else {
                                         echo '<tr><td>' . $pesquisa['id'] . '</td><td>' . $pesquisa['titulo'] . '</td><td>' . $temas . '</td><td>' . $data . '</td><td>' . $dataExc . '</td><td>' . $forma . '</td>
-                                    <td><a href="' . base_url('pesquisa/ocultarAtividade') . "/" . $pesquisa['id'] . '"><i class="fa fa-check-square-o" aria-hidden="true" id="oculto" style="color: green"></i></a>';
-                                        echo  ' <a href="' . base_url('pesquisa/editarPesquisa') . "/" . $pesquisa['id'] . '"  ><i class="fa fa-edit" style="color: blue"></a></i>';
+                                    <td><a href="' . base_url('pesquisa/ocultarAtividade') . "/" . $pesquisa['id'] . '" title="Habilitar/Desabilitar"><i class="fa fa-check-square-o" aria-hidden="true" id="oculto" style="color: green"></i></a>';
+                                        echo  ' <a href="' . base_url('pesquisa/editarPesquisa') . "/" . $pesquisa['id'] . '" title="Editar" ><i class="fa fa-edit" style="color: blue"></a></i>';
                                     }
-                                    echo ' <a href="' . base_url('pesquisa/relatorioPesquisa') . "/" . $pesquisa['id'] . '" id="baixar" ><i class="fa fa-file-excel-o" style="color: black"></i></a>';
-                                    echo ' <a href="' . base_url('pesquisa/relatorioGrafico') . "/" . $pesquisa['id'] . '" ><i class="fa fa-pie-chart" aria-hidden="true" ></i></a></td></tr>';
+                                    echo ' <a href="' . base_url('pesquisa/relatorioPesquisa') . "/" . $pesquisa['id'] . '" id="baixar" title="Baixar Relatório"><i class="fa fa-file-excel-o" style="color: black"></i></a>';
+                                    echo ' <a href="' . base_url('pesquisa/relatorioGrafico') . "/" . $pesquisa['id'] . '" title="Gerar Gráfico"><i class="fa fa-pie-chart" aria-hidden="true" ></i></a></td></tr>';
                                 } ?>
 
 
