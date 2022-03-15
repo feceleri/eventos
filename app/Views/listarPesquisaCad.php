@@ -20,7 +20,7 @@
         $_SESSION['type'] == 0
     ) {
     ?>
-        <div class="container bg-white" style="padding-bottom: 10em;">
+        <div class="container bg-white">
             <br>
             <a class="btn btn-success float-right" id="cad" type="submit" href="<?= base_url('cadastrarPesquisa') ?>"><i class="fa fa-plus" aria-hidden="true"></i> Cadastrar</a>
             <a class="btn btn-success float-right" id="cadPesq" type="submit" href="<?= base_url('relatorioGeral') ?>">Relatório Geral</a>
@@ -106,8 +106,9 @@
 
 
                             </tbody>
-                        </table>
+                        </table>                        
                     </div>
+                    <?php echo $pager->links(); ?>
                 </div>
             </div>
         <?php
