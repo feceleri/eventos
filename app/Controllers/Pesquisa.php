@@ -18,7 +18,7 @@ class Pesquisa extends BaseController
 
         $data = [
             'title' => 'Pesquisa',
-            'atividades' =>  json_encode($atividade->findall()),
+            'atividades' =>  json_encode($atividade->orderBy('titulo', 'ASC')->findall()),
             'cidades' => $cidadeModel->findall(),
             'msg' => "",
             'origem' => "",
@@ -151,7 +151,7 @@ class Pesquisa extends BaseController
             return redirect()->to(base_url(''));
         } else {
             $model = new CadPesquisaModel();
-            $pesquisas = $model->withDeleted()->orderBy('deleted_at', 'ASC')->findAll();
+            $pesquisas = $model->withDeleted()->orderBy('deleted_at', 'ASC')->orderBy('titulo', 'ASC')->findAll();
             foreach ($pesquisas as $pesquisa) {
                 if (isset($pesquisa['data_exc'])&& $pesquisa['data_exc'] !== '0000-00-00 00:00:00' && $pesquisa['data_exc'] < date("Y-m-d h:i:sa") && $pesquisa['deleted_at'] == NULL) {
                     $this->ocultarAtividade($pesquisa['id'], true);
@@ -161,7 +161,7 @@ class Pesquisa extends BaseController
             $data = [
                 'title' => 'Lista pesquisa',
                 // 'data' => $model->findAll(),
-                'data' => $model->withDeleted()->orderBy('deleted_at', 'ASC')->findAll(),
+                'data' => $model->withDeleted()->orderBy('deleted_at', 'ASC')->orderBy('titulo', 'ASC')->findAll(),
             ];
             echo view('templates/header', $data);
             echo view('listarPesquisaCad');
