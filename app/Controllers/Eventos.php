@@ -14,7 +14,7 @@ class Eventos extends BaseController
 
     use ResponseTrait;
 
-
+// teste
 
     public function index($idUser = null, $idEvento = null)
     {
