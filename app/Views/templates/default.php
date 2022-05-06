@@ -107,7 +107,7 @@
         } */
 
         .anchor {
-            margin-left: 20px;
+            margin-left: 15px;
         }
 
         .logo-img {

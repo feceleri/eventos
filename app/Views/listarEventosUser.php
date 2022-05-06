@@ -1,34 +1,27 @@
-<?= $this->extend('default') ?>
-
-<?= $this->section('content') ?>
-
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.24/datatables.min.css" />
-<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.24/datatables.min.js"></script>
+<?= $this->extend('templates/default'); ?>
+<?= $this->section('css'); ?>
 <style>
-    h4 {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    h3 {
-        margin-top: 50px;
-        text-align: center;
-        color: red;
-    }
-
     .card-title {
         text-align: center;
         margin-top: 5px;
+        font-size: 1em;
+    }
+
+    .card-header {
+        /* height: 100px; */
+        overflow: hidden;
+        font-size: 1em;
+    }
+
+    .card-text {
+        margin-top: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .card-body {
-        min-height: 350px;
-        padding: 0;
-    }
-
-    #encerramento {
-        margin-top: 15px;
-        margin-left: 15px;
+        min-height: 500px;
     }
 
     .card-footer {
@@ -36,107 +29,70 @@
     }
 
     .card {
-        padding: 0;
+        padding: 5px;
         border-width: medium;
-        max-width: 370px;
+        max-width: 360px;
         margin: 5px;
+        box-shadow: -11px 7px 8px -4px darkgrey;
         margin-bottom: 21px;
+    }
+
+    .card {
         border: none;
         box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
     }
 
-    #cad2 {        
-        color: white;
+    .card,
+    .card-body {
+        padding: 0;
     }
 
-    #cad1 {
-        margin-left: 235px;
-        color: white;
-        margin-top: -40px;
+
+    #encerramento {
+        margin-top: 15px;
+        margin-left: 15px;
     }
 
-    .cad2,
-    #btn,
-    .cad1 {
+    .btn {
         background-color: #008CBA;
-        font-size: 12px;
-        padding: 8px 15px;
-        border-radius: 8px;
-        border: 2px solid;
+        margin-left: 5px;
+        margin-top: 10px;
+        text-align: center;
+        height: 40px;
         color: white;
     }
-
-    .cad2:hover,
-    #btn:hover {
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     }
 
-    @media only screen and (min-width: 1200px) {
-        .session {
-            margin-left: 150px;
-            text-transform: uppercase;
-        }
+    .btn:hover {
 
-        .evento{
-            margin-left: -50px;
-        }
-
-        .menu {
-            margin-left: 200px;
-        }
-
-        .nav2 {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-        .pesq{
-            margin-left: 50px;
-        }
-
-        .campanha{
-            margin-left: 50px;
-        }
-
-        .menuUser {
-            margin-left: 260px;
-        }
-
-        .sessionUser {
-            margin-left: 260px;
-            text-transform: uppercase;
-        }
-    }
-
-    @media only screen and (max-width: 1200px) {
-        .card {
-            margin-left: 64px;
-        }
+        background-color: #0b3e7a;
     }
 </style>
+<?= $this->endSection() ?>
+
+<?= $this->section('content') ?>
 <script>
     $msg = "";
 </script>
-<main id="t3-content">
+<main>
     <?php if (session()->get('success')) { ?>
         <script>
             $msg = '<?= session()->get('success'); ?>';
         </script>
-    <?php } else if (session()->get('info')) { ?>     
-        <script>   
-        $msg = '<?= session()->get('info'); ?>';   
-        </script>     
+    <?php } else if (session()->get('info')) { ?>
+        <script>
+            $msg = '<?= session()->get('info'); ?>';
+        </script>
     <?php } ?>
     <div class="container" style="padding-bottom: 10em;">
-        <div class="row">
-            <div class="col">
-                <h2 style="text-align: center; font-size:30px" title="Eventos"> Eventos </h2>
-            </div>
-        </div>
+        <h2 style="text-align: center;" title="Minhas Inscrições"> Minhas Inscrições</h2>
+        <br>
+
         <div class="row">
             <?php if (count($data) > 0) { ?>
                 <?php foreach ($data as $key => $evento) {
                     $htm =
-                        '<div class="card card-trip__thumbnail col-12 col-sm-12 col-lg-12  ">'
+                        '<div class="card">'
                         . '<div class="card-header" id="card-header" style="background-color:' .  $evento['corPrimaria'] . '">'
                         . '<h4 class="card-title" >' . $evento['titulo'] . '</h4>'
                         . '</div>'
@@ -150,7 +106,7 @@
                         . '<ul class="nav nav-pills ">'
 
                         . '<li class="nav-item">'
-                        . '<a class="btn btn-primary cad2"    href="' . base_url("inicio/listaEvento") . "/" . $evento['id'] . '">Ingressar</a>'
+                        . '<a class="btn btn-primary"    href="' . base_url("inicio/listaEvento") . "/" . $evento['id'] . '">Ingressar</a>'
                         . '</li>';
 
                     '<li class="nav-item" >';
@@ -158,13 +114,13 @@
                         $htm .= '<a  data-toggle="modal"';
                         if ($evento['certificado'] == 'Evento não gera certificado.') {
                             $htm .= 'data-target="#certificadoModalN"'
-                                . ' class="btn btn-primary cad2" id="cad1" >Informação</a>';
+                                . ' class="btn btn-primary" id="cad1" >Informação</a>';
                         } else if ($evento['certificado'] == 'Não concluiu todas as atividades.') {
                             $htm .= 'data-target="#certificadoModalNC"'
-                                . ' class="btn btn-primary cad2" id="cad1" >Informação</a>';
+                                . ' class="btn btn-primary" id="cad1" >Informação</a>';
                         } else {
                             $htm .= 'data-target="#certificadoModal"'
-                                . 'onclick="setarCampos(' . $evento['id'] . ');"  class="btn btn-primary cad2" id="cad2">Certificado</a>';
+                                . 'onclick="setarCampos(' . $evento['id'] . ');"  class="btn btn-primary" style="color: white;" >Certificado</a>';
                         }
                     }
 
@@ -269,6 +225,8 @@
         </div>
     </div>
 </div>
+<?= $this->endSection() ?>
+<?= $this->section('js'); ?>
 <script>
     $('.form-check-input').on('change', function() {
         if (this.checked) {

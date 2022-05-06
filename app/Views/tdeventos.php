@@ -31,7 +31,7 @@
     }
 
     .card-header {
-        height: 100px;
+        /* height: 100px; */
         overflow: hidden;
         font-size: 1em;
     }
@@ -54,7 +54,7 @@
     .card {
         padding: 5px;
         border-width: medium;
-        max-width: 370px;
+        max-width: 360px;
         margin: 5px;
         box-shadow: -11px 7px 8px -4px darkgrey;
         margin-bottom: 21px;
@@ -128,7 +128,7 @@
         color: #fff;
         position: absolute;
         top: 8px;
-        left: 304px;
+        left: 295px;
         padding: 3px 1px;
         font-family: Quicksand, sans-serif;
         line-height: 20px;
@@ -213,52 +213,11 @@
         background-color: #0b3e7a !important;
     }
 
-    @media only screen and (min-width: 1200px) {
-
-
-        .menuUser {
-            margin-left: 260px;
-        }
-
-        .sessionUser {
-            margin-left: 260px;
-            text-transform: uppercase;
-        }
-
-        .session {
-            margin-left: 150px;
-            text-transform: uppercase;
-        }
-
-        .evento {
-            margin-left: -50px;
-        }
-
-        .menu {
-            margin-left: 200px;
-        }
-
-        .nav2 {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .pesq {
-            margin-left: 50px;
-        }
-
-        .campanha {
-            margin-left: 50px;
+    @media only screen and (max-width: 768px) {
+        .info {
+            display: none;
         }
     }
-
-    @media only screen and (max-width: 1200px) {
-        .card {
-            margin-left: 64px;
-        }
-    }
-
-
 
     [data-tooltip] {
         position: relative;
@@ -292,15 +251,19 @@
 <script>
     $msg = "";
 </script>
-<main id="t3-content">
+<main>
+    <?php if (session()->get('success')) { ?>
+        <script>
+            $msg = '<?= session()->get('success'); ?>';
+        </script>
+    <?php } else if (session()->get('info')) { ?>
+        <script>
+            $msg = '<?= session()->get('info'); ?>';
+        </script>
+    <?php } ?>
     <div class="container">
         <h1>Eventos</h1>
         <br><br>
-        <?php if (session()->get('success')) { ?>
-            <script>
-                $msg = '<?= session()->get('success'); ?>';
-            </script>
-        <?php } ?>
         <div id="a-inscritos" style="text-align: end; margin-bottom: 20px;">
             <?php
             if (
@@ -313,218 +276,214 @@
             }
             ?>
         </div>
-        <div class="row">
-            <?php
-            if (count($data) > 0) {
+        <div class="container">
+            <div class="row">
+                <?php
+                if (count($data) > 0) {
 
-                foreach ($data as $key => $evento) {
-                    if ($evento['dtFim'] > date("Y-m-d")) {
-            ?>
-
-                        <div class="card card-trip__thumbnail  col-12 col-sm-12 col-lg-12                   
+                    foreach ($data as $key => $evento) {
+                        if ($evento['dtFim'] > date("Y-m-d")) {
+                ?>
+                            <div class="card card-trip__thumbnail                  
                         <?php
-                        $destinos = json_decode($evento['destinado']);
-                        foreach ($destinos as $detinado) {
-                            echo " destinado" . $detinado;
-                        }
+                            $destinos = json_decode($evento['destinado']);
+                            foreach ($destinos as $detinado) {
+                                echo " destinado" . $detinado;
+                            }
                         ?>">
-                            <div class="card-header" id="card-header" style="background-color: <?php echo $evento['corPrimaria'] ?>;">
-                                <h4 class="card-title"><?php echo $evento['titulo'] ?></h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="image">
-                                    <img src="<?php echo base_url("/public/img") . "/" . $evento['imagem'] ?>" alt="" width="100%" alt="imagem principal do evento">
-                                    <div class="info" id=txt>
-                                        <span> <?php
-                                                if ((int)$evento['vagas'] <= 0) {
-                                                    echo 'Esgotado';
-                                                } else if ((Date($evento['dtInicio']) > date("Y-m-d H:i:s")) && (Date($evento['dtFim']) > date("Y-m-d H:i:s"))) {
-                                                    echo ' Próx. Evento';
-                                                } else if (((Date($evento['dtInicio'])) > date("Y-m-d H:i:s") && (Date($evento['dtFim'])) > date("Y-m-d H:i:s"))
-                                                    || ((Date($evento['dtInicio'])) < date("Y-m-d H:i:s") && (Date($evento['dtFim'])) > date("Y-m-d H:i:s"))
-                                                ) {
-                                                    echo 'Aberto';
-                                                } else {
-                                                    echo 'Encerrado';
-                                                }
-                                                ?></span>
+                                <div class="card-header" id="card-header" style="background-color: <?php echo $evento['corPrimaria'] ?>;">
+                                    <h4 class="card-title"><?php echo $evento['titulo'] ?></h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="image">
+                                        <img src="<?php echo base_url("/public/img") . "/" . $evento['imagem'] ?>" alt="" width="100%" alt="imagem principal do evento">
+                                        <div class="info" id=txt>
+                                            <span> <?php
+                                                    if ((int)$evento['vagas'] <= 0) {
+                                                        echo 'Esgotado';
+                                                    } else if ((Date($evento['dtInicio']) > date("Y-m-d H:i:s")) && (Date($evento['dtFim']) > date("Y-m-d H:i:s"))) {
+                                                        echo ' Próx. Evento';
+                                                    } else if (((Date($evento['dtInicio'])) > date("Y-m-d H:i:s") && (Date($evento['dtFim'])) > date("Y-m-d H:i:s"))
+                                                        || ((Date($evento['dtInicio'])) < date("Y-m-d H:i:s") && (Date($evento['dtFim'])) > date("Y-m-d H:i:s"))
+                                                    ) {
+                                                        echo 'Aberto';
+                                                    } else {
+                                                        echo 'Encerrado';
+                                                    }
+                                                    ?></span>
+                                        </div>
+
                                     </div>
-
-                                </div>
-                                <div class='eventInfo'>
-                                    <strong>Data:</strong> <?php echo date_format(new DateTime($evento['dtInicio']), "d/m/Y"); ?> até <?php echo date_format(new DateTime($evento['dtFim']), "d/m/Y"); ?><br>
-                                    <strong>Quantidade de inscrição:</strong> <?php echo $evento['limite']; ?><br>
-                                    <strong> Público-alvo: </strong></br>
-                                    <?php foreach ($destinos as $detinado) {
-                                        if ($detinado == "2") {
-                                            echo "Farmacêuticos inscritos em outros estados; " . '</br>';
-                                        }
-                                        if ($detinado == "3") {
-                                            echo "Farmacêutico inscrito no CRF-SP;" . '</br>';
-                                        }
-                                        if ($detinado == "1") {
-                                            echo "Estudantes de Farmácia; " . '</br>';
-                                        }
-                                        if ($detinado == "4") {
-                                            echo "Outros profissionais; " . '</br>';
-                                        }
-                                    } ?>
-                                    </br>
-                                    <strong>Carga horária:</strong> <?php echo $evento['certificado']; ?> horas</br>
-                                    <?php
-                                    if ($evento['tipo'] == '1') {
-
-                                        echo '<strong> Evento: </strong> Exclusivo';
-                                    }
-                                    ?>
-                                    </br>
-                                    <p>Restam apenas<strong> <?php echo $evento['vagas']; ?> </strong>vagas.</p>
-                                </div>
-                            </div>
-
-                            <div class="card-footer text-muted" id="card-footer">
-                                <ul class="nav justify-content-center">
-                                    <li class="nav-item">
-                                        <a type="button" id="btnsobreModal" class="cad2 btn btn-primary" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
-                                            Informações
-                                        </a>
-                                        <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $evento['resumo'])); ?>">
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active cad2" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Atividades</a>
-                                    </li>
-                                    <li class="nav-item">
+                                    <div class='eventInfo'>
+                                        <strong>Data:</strong> <?php echo date_format(new DateTime($evento['dtInicio']), "d/m/Y"); ?> até <?php echo date_format(new DateTime($evento['dtFim']), "d/m/Y"); ?><br>
+                                        <strong>Quantidade de inscrição:</strong> <?php echo $evento['limite']; ?><br>
+                                        <strong> Público-alvo: </strong></br>
+                                        <?php foreach ($destinos as $detinado) {
+                                            if ($detinado == "2") {
+                                                echo "Farmacêuticos inscritos em outros estados; " . '</br>';
+                                            }
+                                            if ($detinado == "3") {
+                                                echo "Farmacêutico inscrito no CRF-SP;" . '</br>';
+                                            }
+                                            if ($detinado == "1") {
+                                                echo "Estudantes de Farmácia; " . '</br>';
+                                            }
+                                            if ($detinado == "4") {
+                                                echo "Outros profissionais; " . '</br>';
+                                            }
+                                        } ?>
+                                        </br>
+                                        <strong>Carga horária:</strong> <?php echo $evento['certificado']; ?> horas</br>
                                         <?php
-                                        if (session()->get('type') == 2 && session()->get('estado') == 26) {
-                                            $destinado = 3;
-                                        } else if (session()->get('type') == 2) {
-                                            $destinado = 2;
-                                        } else if (session()->get('type') == 1) {
-                                            $destinado = 1;
-                                        } else {
-                                            $destinado = 4;
-                                        }
+                                        if ($evento['tipo'] == '1') {
 
-                                        if ($evento['inscrito'] == "Sim") {
-                                            echo '<button type="button" class="btn btn-primary cad1" id="btn"  disabled>Inscrito</button>';
-                                        } else if ((int)$evento['vagas'] <= 0) {
-                                            echo '<button class="btn btn-primary cad2" id="btn"  disabled>Esgotado </button>';
-                                        } else if ($evento['Expirado'] == 'Sim') {
-                                            echo '<button type="button" class="btn btn-primary cad1" id="btn" disabled>Encerrado</button>';
-                                        } else if (!(in_array($destinado, json_decode($evento['destinado'])))) {
-                                            echo '<button class="btn btn-primary cad2" id="btn"   disabled><span data-tooltip="Evento restrito ao público-alvo">Inscreva-se</span></button>';
-                                        } else if ($evento['Expirado'] == 'Não') {
-                                            echo '<button class="btn btn-primary cad2" id="btn"    data-toggle="modal" data-target="#inscrevaModal" onclick="preenchermodal(' . $evento['id'] . ');">Inscreva-se</button>';
+                                            echo '<strong> Evento: </strong> Exclusivo';
                                         }
                                         ?>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                    <?php
-                    }
-                }
-
-
-
-                foreach ($data as $key => $evento) {
-                    if ($evento['dtFim'] < date("Y-m-d")) {
-                    ?>
-
-
-                        <div class="card card-trip__thumbnail col-12 col-sm-12 col-lg-12                   
-                        <?php
-                        $destinos = json_decode($evento['destinado']);
-                        foreach ($destinos as $detinado) {
-                            echo " destinado" . $detinado;
-                        }
-                        ?>">
-                            <div class="card-header encerradoTitle" id="card-header" style="background-color: <?php echo $evento['corPrimaria'] ?>;">
-                                <h4 class="card-title"><?php echo $evento['titulo'] ?></h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="image">
-                                    <img src="<?php echo base_url("/public/img") . "/" . $evento['imagem'] ?>" alt="imagem proncipal do evento" width="100%">
-                                    <div class="info" id=txt>
-                                        <span> <?php
-                                                if ((int)$evento['vagas'] <= 0) {
-                                                    echo 'Esgotado';
-                                                } else if ((Date($evento['dtInicio']) > date("Y-m-d H:i:s")) && (Date($evento['dtFim']) > date("Y-m-d H:i:s"))) {
-                                                    echo ' Próx. Evento';
-                                                } else if (((Date($evento['dtInicio'])) > date("Y-m-d H:i:s") && (Date($evento['dtFim'])) > date("Y-m-d H:i:s"))
-                                                    || ((Date($evento['dtInicio'])) < date("Y-m-d H:i:s") && (Date($evento['dtFim'])) > date("Y-m-d H:i:s"))
-                                                ) {
-                                                    echo 'Aberto';
-                                                } else {
-                                                    echo 'Encerrado';
-                                                }
-                                                ?></span>
+                                        </br>
+                                        <p>Restam apenas<strong> <?php echo $evento['vagas']; ?> </strong>vagas.</p>
                                     </div>
-
                                 </div>
-                                <div class='eventInfo'>
-                                    <strong>Data:</strong> <?php echo date_format(new DateTime($evento['dtInicio']), "d/m/Y"); ?> até <?php echo date_format(new DateTime($evento['dtFim']), "d/m/Y"); ?><br>
-                                    <strong>Quantidade de inscrição:</strong> <?php echo $evento['limite']; ?><br>
-                                    <strong> Evento destinado: </strong></br>
-                                    <?php foreach ($destinos as $detinado) {
-                                        if ($detinado == "2") {
-                                            echo "Farmacêuticos inscritos em outros estados; " . '</br>';
-                                        }
-                                        if ($detinado == "3") {
-                                            echo "Farmacêutico inscrito no CRF-SP;" . '</br>';
-                                        }
-                                        if ($detinado == "1") {
-                                            echo "Estudantes de Farmácia; " . '</br>';
-                                        }
-                                        if ($detinado == "4") {
-                                            echo "Outros profissionais; " . '</br>';
-                                        }
-                                    } ?>
-                                    <br>
-                                    <strong>Carga horária:</strong> <?php echo $evento['certificado']; ?> horas</br>
-                                    <?php
-                                    if ($evento['tipo'] == '1') {
 
-                                        echo '<strong> Evento: </strong> Exclusivo';
-                                    }
-                                    ?>
-                                    <br>
-                                    Restam apenas<strong> <?php echo $evento['vagas']; ?> </strong>vagas.
+                                <div class="card-footer text-muted" id="card-footer">
+                                    <ul class="nav justify-content-center">
+                                        <li class="nav-item">
+                                            <a type="button" id="btnsobreModal" class="cad2 btn btn-primary" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
+                                                Informações
+                                            </a>
+                                            <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $evento['resumo'])); ?>">
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active cad2" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Atividades</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <?php
+                                            if (session()->get('type') == 2 && session()->get('estado') == 26) {
+                                                $destinado = 3;
+                                            } else if (session()->get('type') == 2) {
+                                                $destinado = 2;
+                                            } else if (session()->get('type') == 1) {
+                                                $destinado = 1;
+                                            } else {
+                                                $destinado = 4;
+                                            }
+
+                                            if ($evento['inscrito'] == "Sim") {
+                                                echo '<button type="button" class="btn btn-primary cad1" id="btn"  disabled>Inscrito</button>';
+                                            } else if ((int)$evento['vagas'] <= 0) {
+                                                echo '<button class="btn btn-primary cad2" id="btn"  disabled>Esgotado </button>';
+                                            } else if ($evento['Expirado'] == 'Sim') {
+                                                echo '<button type="button" class="btn btn-primary cad1" id="btn" disabled>Encerrado</button>';
+                                            } else if (!(in_array($destinado, json_decode($evento['destinado'])))) {
+                                                echo '<button class="btn btn-primary cad2" id="btn"   disabled><span data-tooltip="Evento restrito ao público-alvo">Inscreva-se</span></button>';
+                                            } else if ($evento['Expirado'] == 'Não') {
+                                                echo '<button class="btn btn-primary cad2" id="btn"    data-toggle="modal" data-target="#inscrevaModal" onclick="preenchermodal(' . $evento['id'] . ');">Inscreva-se</button>';
+                                            }
+                                            ?>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-
-                            <div class="card-footer text-muted" id="card-footer">
-                                <ul class="nav justify-content-center">
-                                    <li class="nav-item">
-                                        <a type="button" id="btnsobreModal" class="cad2 btn btn-primary encerrado" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
-                                            Informações
-                                        </a>
-                                        <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $evento['resumo'])); ?>">
-
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link active cad2 encerrado" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Atividades</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <?php
-
-                                        echo '<button type="button" class="btn btn-primary cad1 encerrado" id="btn"  disabled>Encerrado</button>';
-
-                                        ?>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-            <?php
+                        <?php
+                        }
                     }
-                }
-            } else {
-                echo "<h3>Nenhum evento cadastrado!</h3>";
-            }
+                    foreach ($data as $key => $evento) {
+                        if ($evento['dtFim'] < date("Y-m-d")) {
+                        ?>
 
-            ?>
+
+                            <div class="card                    
+                        <?php
+                            $destinos = json_decode($evento['destinado']);
+                            foreach ($destinos as $detinado) {
+                                echo " destinado" . $detinado;
+                            }
+                        ?>">
+                                <div class="card-header encerradoTitle" id="card-header" style="background-color: <?php echo $evento['corPrimaria'] ?>;">
+                                    <h4 class="card-title"><?php echo $evento['titulo'] ?></h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="image">
+                                        <img src="<?php echo base_url("/public/img") . "/" . $evento['imagem'] ?>" alt="imagem proncipal do evento" width="100%">
+                                        <div class="info" id=txt>
+                                            <span> <?php
+                                                    if ((int)$evento['vagas'] <= 0) {
+                                                        echo 'Esgotado';
+                                                    } else if ((Date($evento['dtInicio']) > date("Y-m-d H:i:s")) && (Date($evento['dtFim']) > date("Y-m-d H:i:s"))) {
+                                                        echo ' Próx. Evento';
+                                                    } else if (((Date($evento['dtInicio'])) > date("Y-m-d H:i:s") && (Date($evento['dtFim'])) > date("Y-m-d H:i:s"))
+                                                        || ((Date($evento['dtInicio'])) < date("Y-m-d H:i:s") && (Date($evento['dtFim'])) > date("Y-m-d H:i:s"))
+                                                    ) {
+                                                        echo 'Aberto';
+                                                    } else {
+                                                        echo 'Encerrado';
+                                                    }
+                                                    ?></span>
+                                        </div>
+
+                                    </div>
+                                    <div class='eventInfo'>
+                                        <strong>Data:</strong> <?php echo date_format(new DateTime($evento['dtInicio']), "d/m/Y"); ?> até <?php echo date_format(new DateTime($evento['dtFim']), "d/m/Y"); ?><br>
+                                        <strong>Quantidade de inscrição:</strong> <?php echo $evento['limite']; ?><br>
+                                        <strong> Evento destinado: </strong></br>
+                                        <?php foreach ($destinos as $detinado) {
+                                            if ($detinado == "2") {
+                                                echo "Farmacêuticos inscritos em outros estados; " . '</br>';
+                                            }
+                                            if ($detinado == "3") {
+                                                echo "Farmacêutico inscrito no CRF-SP;" . '</br>';
+                                            }
+                                            if ($detinado == "1") {
+                                                echo "Estudantes de Farmácia; " . '</br>';
+                                            }
+                                            if ($detinado == "4") {
+                                                echo "Outros profissionais; " . '</br>';
+                                            }
+                                        } ?>
+                                        <br>
+                                        <strong>Carga horária:</strong> <?php echo $evento['certificado']; ?> horas</br>
+                                        <?php
+                                        if ($evento['tipo'] == '1') {
+
+                                            echo '<strong> Evento: </strong> Exclusivo';
+                                        }
+                                        ?>
+                                        <br>
+                                        Restam apenas<strong> <?php echo $evento['vagas']; ?> </strong>vagas.
+                                    </div>
+                                </div>
+
+                                <div class="card-footer text-muted" id="card-footer">
+                                    <ul class="nav justify-content-center">
+                                        <li class="nav-item">
+                                            <a type="button" id="btnsobreModal" class="cad2 btn btn-primary encerrado" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
+                                                Informações
+                                            </a>
+                                            <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $evento['resumo'])); ?>">
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active cad2 encerrado" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Atividades</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <?php
+
+                                            echo '<button type="button" class="btn btn-primary cad1 encerrado" id="btn"  disabled>Encerrado</button>';
+
+                                            ?>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                <?php
+                        }
+                    }
+                } else {
+                    echo "<h3>Nenhum evento cadastrado!</h3>";
+                }
+
+                ?>
+            </div>
         </div>
 
     </div>
