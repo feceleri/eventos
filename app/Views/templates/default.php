@@ -23,7 +23,7 @@
     <style>
         header {
             background-color: #fff;
-            max-height: 100px;
+            /* max-height: 100px; */
         }
 
         .bg-custom {
@@ -169,6 +169,19 @@
                 margin-left: 50px;
             }
         }
+
+        .acess {
+            color: black;
+            font-size: 12px;
+        }
+
+        .acess span {
+            background: #ececec;
+            padding: 0px 4px 0px 4px;
+            border: 1px solid black;
+            color: black;
+            font-size: 10px;
+        }
     </style>
     <?= $this->renderSection("css"); ?>
 
@@ -177,18 +190,10 @@
 
 
 <header>
-    <div class="row" style="margin: 0px;">
+    <div style="border-bottom:1px solid black;">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <div class="logo-image">
-                        <a href="<?= base_url('inicio'); ?>" title="CRF-SP - Conselho Regional de Farmácia do Estado de São Paulo">
-                            <img class="logo-img" src="<?= base_url('public/img/logo.png'); ?>" alt="CRF-SP - Conselho Regional de Farmácia do Estado de São Paulo" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-9" style="text-align: right;">
-
+                <div class="col-12 col-md-6" style="text-align: left;">
                     <a accesskey="1" href="javascript:void(0);" class="anchor acess" title="conteudo" onclick="abrirConteudo()">
                         ir para conteudo <span>1</span>
                     </a>
@@ -198,116 +203,44 @@
                     <a accesskey="3" href="javascript:void(0);" class="anchor acess" title="rodapé" onclick="abrirRodape()">
                         ir para rodapé <span>3</span>
                     </a>
+
+
+                </div>
+                <div class="col-12 col-md-6" style="text-align: right;">
                     <a accesskey="4" href="javascript:void(0);" class="anchor acess" title="contraste" onclick="contraste();" id="contrasteLink">
                         alto contraste <span>4</span>
                     </a>
                     <a accesskey="5" href="<?= base_url('acessibilidade'); ?>" class="anchor acess " title="acessibilidade">
                         acessibilidade <span>5</span>
                     </a>
-
-                </div>
-            </div>
-
-            <div class=" header-utils">
-                <div class="social-icons ">
-                    <div vw class="enabled">
-                        <div vw-access-button class="active"></div>
-                        <div vw-plugin-wrapper>
-                            <div class="vw-plugin-top-wrapper"></div>
-                        </div>
-                    </div>
-                    <!-- <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script> -->
-                    <script>
-                        (function(window, document, Loading, MessageBox) {
-                            function VLibrasPlugin() {
-                                this.loaded = false;
-                                this.chooser = new qdClient.Chooser();
-                                this.glosa = undefined;
-                                this.loading = new Loading('#loading-screen', '#message-box');
-                                this.message = new MessageBox('#message-box');
-                                this.lastReq = {
-                                    url: null,
-                                    millis: null,
-                                    response: null
-                                };
-                            }
-
-                            VLibrasPlugin.prototype.sendGlosa = function(glosa) {
-                                var glosa = glosa || this.glosa;
-
-                                if (glosa !== undefined && this.loaded === true) {
-                                    window.SendMessage('PlayerManager', 'catchGlosa', glosa);
-                                }
-                            };
-
-                            VLibrasPlugin.prototype.translate = function(text) {
-                                var self = this;
-                                self.loading.show('Traduzindo...');
-                                self.chooser.choose(self.lastReq.url, self.lastReq.millis, self.lastReq.response,
-                                    function(url) {
-                                        var start = new Date().getTime();
-
-                                        if (!url) {
-                                            self.loading.hide();
-                                            self.message.show('warning', 'Não foi possível se conectar ao servidor. Irei soletrar!', 3000);
-
-                                            self.glosa = decodeURI(text).toUpperCase();
-                                            self.sendGlosa();
-                                            return;
-                                        }
-
-                                        qdClient.request(url + '?texto=' + text, "GET", {},
-                                            function(status, response) {
-                                                self.lastReq.response = status !== 200 ? -1 : status;
-                                                self.lastReq.millis = (new Date().getTime() - start);
-                                                self.lastReq.url = url;
-
-                                                self.loading.hide();
-                                                if (status !== 200)
-                                                    self.message.show('warning', 'Não foi possível se conectar ao servidor. Irei soletrar!', 3000);
-
-                                                self.glosa = response || decodeURI(text).toUpperCase();
-                                                self.sendGlosa();
-                                            });
-                                    });
-                            };
-
-                            VLibrasPlugin.prototype.showMessage = function(level, message, time) {
-                                this.message.show(level, message, time);
-                            };
-
-                            VLibrasPlugin.prototype.hideMessage = function() {
-                                this.message.hide();
-                            };
-
-                            VLibrasPlugin.prototype.load = function() {
-                                this.loaded = true;
-                                this.sendGlosa();
-                            };
-
-                            VLibrasPlugin.prototype.errorHandler = function() {
-                                console.log('ErrorHandler!');
-                                this.message.show('warning', 'Ops! Ocorreu um problema, por favor entre em contato com a gente.');
-                            };
-
-                            // Expose
-                            window.VLibrasPlugin = new VLibrasPlugin();
-                            window.onerror = function() {
-                                this.VLibrasPlugin.errorHandler();
-                            };
-
-                            window.onLoadPlayer = function() {
-                                this.VLibrasPlugin.load();
-                            };
-                        })(window, document, Loading, MessageBox);
-                    </script>
-                    <script>
-                        new window.VLibras.Widget('https://vlibras.gov.br/app');
-                    </script>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row" style="margin: 0px;">
+            <div class="col-12 col-md-3">
+                <div class="logo-image">
+                    <a href="<?= base_url('inicio'); ?>" title="CRF-SP - Conselho Regional de Farmácia do Estado de São Paulo">
+                        <img class="logo-img" src="<?= base_url('public/img/logo.png'); ?>" alt="CRF-SP - Conselho Regional de Farmácia do Estado de São Paulo" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-7">
+
+            </div>
+        </div>
+    </div>
+    <div vw="" class="enabled">
+        <div vw-access-button="" class="active">&nbsp;</div>
+        <div vw-plugin-wrapper="">
+            <div class="vw-plugin-top-wrapper">&nbsp;</div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </header>
 
 <body class="d-flex flex-column min-vh-100">
@@ -382,7 +315,8 @@
                                             <!-- <a class="nav-link" href="<?= base_url('inscrevase') ?>">Inscreva-se</a> -->
                                         </li>
                                         <li class="nav-item  nav2 ">
-                                            <a class="nav-link" href="<?= base_url('listarEventosUser') ?>">Minhas inscrições</a>
+                                            <a class="nav-link" href="<?= base_url('listarEventosUser') ?>">Minhas
+                                                inscrições</a>
                                         </li>
                                         <!-- <li class="nav-item dropdown  ">
                                 <a class="nav-link" href="<?= base_url('listarAtividades') ?>">Atividades</a>
@@ -418,9 +352,12 @@
     <?= $this->renderSection("content"); ?>
 
     <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
@@ -684,17 +621,29 @@
 
         <?php if (isset($color)) {
             echo ('h2, h1,th {                
-                color: ' . $color . ';
-        }');
-        } ?><?php if (isset($colorSecundaria)) {
+color: ' . $color . ';
+            }
+
+            ');
+        }
+
+        ?><?php if (isset($colorSecundaria)) {
                 echo (' .btn, #card-footer, #card-header , .card-footer, .card-header {                
-            background-color: ' . $colorSecundaria . ';
-        }');
-            } ?><?php if (isset($colorFH) && isset($colorSecundariaFH)) {
+background-color: ' . $colorSecundaria . ';
+            }
+
+            ');
+            }
+
+            ?><?php if (isset($colorFH) && isset($colorSecundariaFH)) {
                     echo ('.bg-custom, .footer {
-            background-image: linear-gradient(15deg,  ' . $colorFH . '  0%, ' . $colorSecundariaFH . ' 100%);
-        }');
-                } ?>
+background-image: linear-gradient(15deg, ' . $colorFH . '0%, ' . $colorSecundariaFH . '100%);
+            }
+
+            ');
+                }
+
+                ?>
     </style>
     <?php
     if (session()->get('isLoggedIn')) : ?>

@@ -90,7 +90,7 @@ class Atividades extends BaseController
             if ($this->request->getMethod() == 'post') {
                 //VALIDAÇÕES
                 $rules = [
-                    'titulo' => 'min_length[3]|max_length[60]',
+                    'titulo' => 'min_length[3]|max_length[200]',
                     'atividade' => 'min_length[10]',
                 ];
 
@@ -160,7 +160,7 @@ class Atividades extends BaseController
             if ($this->request->getMethod() == 'post') {
                 //VALIDAÇÕES
                 $rules = [
-                    'titulo' => 'min_length[3]|max_length[60]',
+                    'titulo' => 'min_length[3]|max_length[200]',
                     'atividade' => 'min_length[10]',
                 ];
 

@@ -27,6 +27,13 @@
     .card-title {
         text-align: center;
         margin-top: 5px;
+        font-size: 1em;
+    }
+
+    .card-header {
+        height: 100px;
+        overflow: hidden;
+        font-size: 1em;
     }
 
     .card-text {
@@ -120,16 +127,16 @@
         background: black;
         color: #fff;
         position: absolute;
-        top: 30px;
-        left: 250px;
-        padding: 4px 8px;
+        top: 8px;
+        left: 304px;
+        padding: 3px 1px;
         font-family: Quicksand, sans-serif;
-        font-weight: 700;
         line-height: 20px;
         transform: rotate(45deg);
         overflow: visible;
-        width: 152px;
+        width: 90px;
         text-align: center;
+        font-size: 10px !important;
     }
 
     .info::after {
@@ -147,10 +154,10 @@
     .info::before {
         content: "";
         position: absolute;
-        top: -36px;
-        right: 143px;
-        width: 20px;
-        height: 100px;
+        top: -30px;
+        right: 69px;
+        width: 22px;
+        height: 61px;
         transform: rotate(45deg);
         background-color: #f4f4f4;
     }
@@ -378,10 +385,10 @@
                             <div class="card-footer text-muted" id="card-footer">
                                 <ul class="nav justify-content-center">
                                     <li class="nav-item">
-                                        <a type="button" id="btnsobreModal" class="cad2 btn btn-primary" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?=$evento['id'] ?>')">
+                                        <a type="button" id="btnsobreModal" class="cad2 btn btn-primary" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
                                             Informações
                                         </a>
-                                        <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s','/[^\S ]+\</s','/(\s)+/s','/<!--(.|\s)*?-->/'), array('>','<','\\1',''), $evento['resumo'])); ?>">
+                                        <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $evento['resumo'])); ?>">
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link active cad2" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Atividades</a>
@@ -491,10 +498,10 @@
                             <div class="card-footer text-muted" id="card-footer">
                                 <ul class="nav justify-content-center">
                                     <li class="nav-item">
-                                    <a type="button" id="btnsobreModal" class="cad2 btn btn-primary encerrado" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?=$evento['id'] ?>')">
+                                        <a type="button" id="btnsobreModal" class="cad2 btn btn-primary encerrado" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
                                             Informações
                                         </a>
-                                        <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s','/[^\S ]+\</s','/(\s)+/s','/<!--(.|\s)*?-->/'), array('>','<','\\1',''), $evento['resumo'])); ?>">
+                                        <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $evento['resumo'])); ?>">
 
                                     </li>
                                     <li class="nav-item">
@@ -610,7 +617,7 @@
         document.getElementById("btnConfirmaInscricao").href = link + id;
     }
 
-    function preenchermodalSobre(resumo) {   
+    function preenchermodalSobre(resumo) {
         var hiden = document.getElementById(resumo).value;
         var texto = $('#sobreModalContent').html(hiden).text();
         $('#sobreModalContent').html(texto);
@@ -645,5 +652,11 @@
     }
 
     $('#modalInfoTrigger').click();
+
+    // $(function() {
+    //     while ($('.card-header h4').height() > $('.card-header').height()) {
+    //         $('.card-header h4').css('font-size', (parseInt($('.card-header h4').css('font-size')) - 1) + "px");
+    //     }
+    // });
 </script>
 <?= $this->endSection() ?>

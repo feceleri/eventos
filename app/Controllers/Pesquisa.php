@@ -161,7 +161,7 @@ class Pesquisa extends BaseController
             $data = [
                 'title' => 'Lista pesquisa',
                 // 'data' => $model->findAll(),
-                'data' => $model->withDeleted()->orderBy('deleted_at', 'ASC')->orderBy('titulo', 'ASC')->paginate(10),
+                'data' => $model->withDeleted()->orderBy('deleted_at', 'ASC')->orderBy('titulo', 'ASC')->paginate(50),
                 'pager' => $model->withDeleted()->orderBy('deleted_at', 'ASC')->orderBy('titulo', 'ASC')->pager,
             ];
             echo view('templates/header', $data);

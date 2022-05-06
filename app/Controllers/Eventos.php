@@ -77,6 +77,24 @@ class Eventos extends BaseController
         }
     }
 
+    public function desinscreverEvento()
+    {
+        if (!session()->get('isLoggedIn')) {
+            return redirect()->to(base_url(''));
+        } else {
+
+            $model = new EventoModel();
+            $idUser = session()->get('id');
+            $uri = current_url(true);
+            $idEvento = $uri->getSegment(4);
+            $msg = $model->desinscricaoEvento($idUser, $idEvento);
+            $session = session();
+            $session->setFlashdata('success', $msg);
+            // var_dump($msg);exit;
+            return redirect()->to(base_url('inicio'));
+        }
+    }
+
 
     //------------------------------------------------------------------------------
 
