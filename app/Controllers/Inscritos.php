@@ -8,7 +8,7 @@ use App\Models\UserAtividade;
 use App\Models\CertificadoModel;
 
 class Inscritos extends BaseController
-{
+{    
     public function relatorioEvento($id = null)
     {
         $usuarios =  new UserModel();
@@ -18,18 +18,7 @@ class Inscritos extends BaseController
 
         $uri = current_url(true);
         $eventID = $uri->getSegment(4);
-        // $result = $this->
-        $users = $usuarios
-            // ->select("users.id, concat(users.firstname,' ', users.lastname) as nome, users.email, pais.nome as pais, estado.nome as estado, users.`type`, group_concat(usuario_atividade.idAtividade) as atividadesconcluidas, users.created_dt")
-            // ->join("usuario_atividade", "users.id = usuario_atividade.idUser",'left')
-            // ->join("estado", "users.estado = estado.id",'left')
-            // ->join("pais", "users.pais = pais.id")
-            // ->groupBy("users.id")
-            // ->findAll();
-
-
-
-            ->select('users.id, concat(users.firstname," ", users.lastname) as nome, users.email, atividade_evento.idEvento, eventos.titulo, 
+        $users = $usuarios->select('users.id, concat(users.firstname," ", users.lastname) as nome, users.email, atividade_evento.idEvento, eventos.titulo, 
         pais.nome as pais, estado.nome as estado, users.`type`, group_concat(usuario_atividade.idAtividade) as atividadesconcluidas, 
         usuario_evento.created_at AS "dtInscricao", certificado.created_at AS "dataCertificado"')
             ->join('usuario_evento', 'usuario_evento.idUser =  users.id')
@@ -42,18 +31,12 @@ class Inscritos extends BaseController
             ->where('eventos.id', $id)
             ->groupBy('users.id')
             ->get()->getResultArray();
-        // return $result;
-        // var_dump($users); exit;
-
-
+        
         $certificados = $certificado
             ->select('count(idUser) as total')
-            ->where('certificado.idEvento', $eventID)
-            // ->get()->getResultArray();
+            ->where('certificado.idEvento', $eventID)            
             ->first();
-
-        // var_dump($certificados);exit;
-
+        
         $totalAtividade = $atividade
             ->select('count(id) as total')
             ->where('atividade_evento.idEvento', $eventID)
@@ -79,7 +62,7 @@ class Inscritos extends BaseController
             return redirect()->to(base_url(''));
         } else {
             echo view('templates/header', $data);
-            echo view('inscritos', $data);
+            echo view('inscritosEvento');
             echo view('templates/footer');
         }
     }

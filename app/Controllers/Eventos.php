@@ -94,6 +94,24 @@ class Eventos extends BaseController
         }
     }
 
+    
+    public function cancelarInscricaoUsuarioEvento()
+    {
+        if (!session()->get('isLoggedIn')) {
+            return redirect()->to(base_url(''));
+        } else {
+
+            $model = new EventoModel();            
+            $uri = current_url(true);
+            $idUser = $uri->getSegment(4);
+            $idEvento = $uri->getSegment(5);
+            $msg = $model->desinscricaoEvento($idUser, $idEvento);
+            $session = session();
+            $session->setFlashdata('success', $msg);            
+            return redirect()->to(base_url('inscritos/relatorioEvento/'.$idEvento));
+        }
+    }
+
 
     //------------------------------------------------------------------------------
 

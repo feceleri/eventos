@@ -354,7 +354,7 @@
                                             <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $evento['resumo'])); ?>">
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link active cad2" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Atividades</a>
+                                            <a class="nav-link active cad2" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Ingressar</a>
                                         </li>
                                         <li class="nav-item">
                                             <?php
@@ -465,7 +465,7 @@
 
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link active cad2 encerrado" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Atividades</a>
+                                            <a class="nav-link active cad2 encerrado" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Ingressar</a>
                                         </li>
                                         <li class="nav-item">
                                             <?php

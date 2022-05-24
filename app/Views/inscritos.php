@@ -1,5 +1,5 @@
 <?= $this->extend('default') ?>
-
+<!-- EXCLUIR PÁGINA - SUBSTITUIDA POR inscritosEvento -->
 <?= $this->section('content') ?>
 
 <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.24/datatables.min.css" />

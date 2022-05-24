@@ -42,6 +42,7 @@ $routes->get('logout', 'Users::logout');
 $routes->match(['get','post'],'/inicio', 'Eventos::index');
 $routes->match(['get','post'],'/inicio/inscreverEvento/(:num)', 'Eventos::inscreverEvento');
 $routes->match(['get','post'],'/inicio/desinscreverEvento/(:num)', 'Eventos::desinscreverEvento');
+$routes->match(['get','post'],'/inicio/cancelarInscricaoUsuarioEvento/(:num)/(:num)', 'Eventos::cancelarInscricaoUsuarioEvento');
 $routes->match(['get','post'],'/inicio/listaEvento/(:num)', 'Eventos::listaEvento');
 
 
