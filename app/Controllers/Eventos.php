@@ -89,8 +89,7 @@ class Eventos extends BaseController
             $idEvento = $uri->getSegment(4);
             $msg = $model->desinscricaoEvento($idUser, $idEvento);
             $session = session();
-            $session->setFlashdata('success', $msg);
-            // var_dump($msg);exit;
+            $session->setFlashdata('success', $msg);            
             return redirect()->to(base_url('inicio'));
         }
     }

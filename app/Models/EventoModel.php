@@ -25,7 +25,7 @@ class EventoModel extends Model
         $data = [
             'idUser' => $idUser,
             'idEvento'  => $idEvento,
-        ];  
+        ];
 
         $count = $this
             ->db->table('usuario_evento')
@@ -71,21 +71,20 @@ class EventoModel extends Model
             'idUser' => $idUser,
             'idEvento'  => $idEvento,
         ];
+        // var_dump($data);
+        // exit;
 
-        if ($this->verificaInscricao($data)) {
-            if ($this
-                ->db
-                ->table('usuario_evento')
-                ->where($data)
-                ->delete()
-            ) {
-                $result = "Desinscrição efetuada com sucesso!";
-            } else {
-                $result = "Erro ao efetuar desinscrição";
-            }
+        if ($this
+            ->db
+            ->table('usuario_evento')
+            ->where($data)
+            ->delete()
+        ) {
+            $result = "Desinscrição efetuada com sucesso!";
         } else {
             $result = "Erro ao efetuar desinscrição";
         }
+
         return $result;
     }
 

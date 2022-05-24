@@ -368,8 +368,10 @@
                                                 $destinado = 4;
                                             }
 
-                                            if ($evento['inscrito'] == "Sim") {
-                                                echo '<button type="button" class="btn btn-primary cad1" id="btn"  disabled>Inscrito</button>';
+                                            if ($evento['inscrito'] == "Sim") {         
+                                                $jaison = json_encode($evento);
+                                                echo '<script> var jaison = '.$jaison.';</script>';
+                                                echo '<button type="button" class="btn btn-danger cad2" id="btn"  data-toggle="modal" data-target="#cancelaInscricaoModal" onclick="preencherModalCancelarInscricao(jaison);" >Inscrito</button>';
                                             } else if ((int)$evento['vagas'] <= 0) {
                                                 echo '<button class="btn btn-primary cad2" id="btn"  disabled>Esgotado </button>';
                                             } else if ($evento['Expirado'] == 'Sim') {
@@ -377,7 +379,7 @@
                                             } else if (!(in_array($destinado, json_decode($evento['destinado'])))) {
                                                 echo '<button class="btn btn-primary cad2" id="btn"   disabled><span data-tooltip="Evento restrito ao público-alvo">Inscreva-se</span></button>';
                                             } else if ($evento['Expirado'] == 'Não') {
-                                                echo '<button class="btn btn-primary cad2" id="btn"    data-toggle="modal" data-target="#inscrevaModal" onclick="preenchermodal(' . $evento['id'] . ');">Inscreva-se</button>';
+                                                echo '<button class="btn btn-primary cad2" id="btn" data-toggle="modal" data-target="#inscrevaModal" onclick="preenchermodal(' . $evento['id'] . ');">Inscreva-se</button>';
                                             }
                                             ?>
                                         </li>
@@ -566,14 +568,43 @@
         </div>
     </div>
 
+    <!-- Modal Cancelar Inscrição -->
+    <div class="modal fade" data-backdrop="static" id="cancelaInscricaoModal" tabindex="-1" role="dialog" aria-labelledby="cancelaInscricaoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cancelaInscricaoModalLabel">Olá <?= session()->get('firstname') ?>, </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="msgConfirmacao">
+                    Cancelar inscrição de Conselho Federal de Farmácia?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary cad" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary cad" id="btnCancelaInscricao">Cancelar Inscrição</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </main>
 <?= $this->endSection() ?>
 <?= $this->section('js'); ?>
 <script>
     function preenchermodal(id) {
-        var link = '<?php echo (base_url('inicio/inscreverEvento/') . "/"); ?>';
+        var link = '<?php echo (base_url('inicio/inscreverEvento/') . "/"); ?>';        
         document.getElementById("btnConfirmaInscricao").href = link + id;
+    }
+
+    function preencherModalCancelarInscricao(evento) {
+        var link = '<?php echo (base_url('inicio/desinscreverEvento/') . "/"); ?>';
+        var msgConfirmacao = document.querySelector('#msgConfirmacao');
+        msgConfirmacao.textContent = "Cancelar inscrição de " + evento.titulo;
+        document.getElementById("btnCancelaInscricao").href = link + evento.id;
     }
 
     function preenchermodalSobre(resumo) {
@@ -611,11 +642,5 @@
     }
 
     $('#modalInfoTrigger').click();
-
-    // $(function() {
-    //     while ($('.card-header h4').height() > $('.card-header').height()) {
-    //         $('.card-header h4').css('font-size', (parseInt($('.card-header h4').css('font-size')) - 1) + "px");
-    //     }
-    // });
 </script>
 <?= $this->endSection() ?>

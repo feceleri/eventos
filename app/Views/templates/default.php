@@ -12,10 +12,8 @@
     <!-- Bootstrap CSS -->
     <link rel="icon" href="<?= base_url() ?>/public/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
     <script src="https://cdn.tiny.cloud/1/v3a7dc1nzdd06k29ac2c2ubbcppcvjzd8s3bkrezrxj56hnf/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 
@@ -88,9 +86,7 @@
                 min-width: 120px;
             }
 
-
         }
-
 
         .navbar {
             width: 100%;
@@ -100,13 +96,7 @@
             width: 100%;
         }
 
-        /* #anchorpt1 {
-            margin-top: 20px;
-            float: right;
-            width: 750px;
-        } */
-
-        .anchor {
+          .anchor {
             margin-left: 15px;
         }
 
@@ -117,45 +107,12 @@
             margin-bottom: 10px;
         }
 
-        /* @media only screen and (min-width: 1200px) {
-            .session {
-                margin-left: 260px;
-                text-transform: uppercase;
-            }
+       
 
-            .menu {
-                margin-left: 260px;
-            }
-
-            .nav2 {
-                margin-left: 70px;
-                margin-right: 70px;
-            }
-
-            .menuUser {
-                margin-left: 260px;
-            }
-
-            .sessionUser {
-                margin-left: 260px;
-                text-transform: uppercase;
-            }
-        } */
-
-        @media only screen and (min-width: 1200px) {
-            .session {
-                margin-left: 150px;
-                text-transform: uppercase;
-            }
-
+        @media only screen and (min-width: 1200px) {      
             .evento {
                 margin-left: -50px;
             }
-
-            .menu {
-                margin-left: 200px;
-            }
-
             .nav2 {
                 margin-left: 50px;
                 margin-right: 50px;
@@ -184,11 +141,7 @@
         }
     </style>
     <?= $this->renderSection("css"); ?>
-
-
 </head>
-
-
 <header>
     <div style="border-bottom:1px solid black;">
         <div class="container">
@@ -242,31 +195,28 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 </header>
-
 <body class="d-flex flex-column min-vh-100">
     <?php $uri = service('uri'); ?>
     <?php if (session()->get('isLoggedIn')) : ?>
-
         <nav class="navbar navbar-expand-lg navbar-dark  bg-custom">
             <div class="container" id="menuanchor">
-
-                <?php
-                if (
-                    isset($_SESSION['id']) &&
-                    $_SESSION['type'] == 0
-                ) {
-                ?>
-                    <div class="col-12">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav mr-auto" id="inicio">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="<?= base_url('inicio'); ?>">Inicio</a>
-                                </li>
-                            </ul>
-                            <ul class="navbar-nav mr-auto menu ">
+                <div class="col-12">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto" id="inicio">
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url('inicio'); ?>">Inicio</a>
+                            </li>
+                        </ul>
+                        <?php
+                        if (
+                            isset($_SESSION['id']) &&
+                            $_SESSION['type'] == 0
+                        ) {
+                        ?>
+                            <ul class="navbar-nav mx-auto">
                                 <li class="nav-item dropdown ">
                                     <a class="nav-link evento" href="<?= base_url('alterarEventos') ?>">Eventos</a>
                                 </li>
@@ -283,68 +233,34 @@
                                     <a class="nav-link campanha" href="<?= base_url('listarCampanhas') ?>">Campanhas</a>
                                 </li>
                             </ul>
-
-                            <ul class="navbar-nav mr-auto  session">
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle fa fa-sign-out" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <?php
-                                        echo $_SESSION['firstname'];
-                                        ?>
-
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="<?php echo base_url('editarUser') . '/' . $_SESSION['id'] ?>">Editar</a>
-                                        <a class="dropdown-item" href="<?= base_url('logout') ?>">Sair</a>
-                                    </div>
+                        <?php
+                        } else {
+                        ?>
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?= base_url('listarEventosUser') ?>">Minhas inscrições</a>
+                                </li>
                             </ul>
                         <?php
-                    } else {
+                        }
                         ?>
-                            <div class="col-12">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarNav">
-                                    <ul class="navbar-nav" id="inicio">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="<?= base_url('inicio'); ?>">Inicio</a>
-                                        </li>
-                                    </ul>
-                                    <ul class="navbar-nav  menuUser" style=" margin-left: 320px;">
-                                        <li class="nav-item dropdown ">
-                                            <!-- <a class="nav-link" href="<?= base_url('inscrevase') ?>">Inscreva-se</a> -->
-                                        </li>
-                                        <li class="nav-item  nav2 ">
-                                            <a class="nav-link" href="<?= base_url('listarEventosUser') ?>">Minhas
-                                                inscrições</a>
-                                        </li>
-                                        <!-- <li class="nav-item dropdown  ">
-                                <a class="nav-link" href="<?= base_url('listarAtividades') ?>">Atividades</a>
-                            </li> -->
-                                    </ul>
-
-                                    <ul class="navbar-nav sessionUser">
-                                        <li class="nav-item dropdown ">
-                                            <a class="nav-link dropdown-toggle fa fa-sign-out" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <?php
-                                                echo $_SESSION['firstname'];
-                                                ?>
-
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                                <a class="dropdown-item editarUser" href="<?php echo base_url('editarUser') . '/' . $_SESSION['id'] ?>">Editar</a>
-                                                <a class="dropdown-item" href="<?= base_url('logout') ?>">Sair</a>
-                                            </div>
-                                    </ul>
-
-                                <?php
-                            }
-                                ?>
-
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle fa fa-sign-out" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <?php
+                                    echo $_SESSION['firstname'];
+                                    ?>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="<?php echo base_url('editarUser') . '/' . $_SESSION['id'] ?>">Editar</a>
+                                    <a class="dropdown-item" href="<?= base_url('logout') ?>">Sair</a>
                                 </div>
-                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
-
     <?php
     endif;
     ?>
@@ -361,7 +277,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST5941BK0S"></script>
     <script>

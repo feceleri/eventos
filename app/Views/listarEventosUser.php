@@ -60,8 +60,7 @@
         text-align: center;
         height: 40px;
         color: white;
-    }
-    }
+    }    
 
     .btn:hover {
 

@@ -1,3 +1,26 @@
+<script>
+    var protocolo = window.location.protocol;
+    var url = window.location.href;
+  
+    if (url.includes("portal")) {
+        window.location.href =
+            window.location.href.replace(
+                'portal', 'www');
+    }
+    if (window.location.protocol == 'http:') {
+        console.log("Você está acessando-nos através do protocolo HTTP (não seguro) " +
+            "Redirecionando para o HTTPS.");
+
+        if (!url.includes("http://localhost/")) {
+            window.location.href =
+                window.location.href.replace(
+                    'http:', 'https:');
+        }
+    } else if (window.location.protocol == "https:") {
+        console.log("Este acesso é através do protocolo HTTPS (seguro)");
+    }
+</script>
+
 <style>
     :root {
         --input-padding-x: 1.5rem;
