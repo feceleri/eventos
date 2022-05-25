@@ -17,6 +17,14 @@
     p.btn.float-right {
         margin: 3px;
     }
+
+    i.fa.fa-minus-circle {
+        font-size: 17px;        
+    }
+
+    td:last-child {
+        text-align: center;
+    }
 </style>
 <?= $this->endSection(); ?>
 <?= $this->section('content') ?>
@@ -50,14 +58,15 @@
                 <h2>
                     <?php echo $users[0]['idEvento'] . " - " . $users[0]['titulo']; ?>
                 </h2>
-                <p class="btn btn-light float-right">
-                    Inscritos <span class="badge badge-light"> <?php echo count($users); ?></span>
+                <p class="btn btn-success float-right">
+                    Certificados <span class="badge badge-light"> <?php echo $certificado['total']; ?></span>
                 </p>
                 <p class="btn btn-primary float-right">
-                    Inscritos Concluíram <span class="badge badge-light"> <?php echo $inscritos; ?></span>
+                    Concluíram <span class="badge badge-light"> <?php echo $inscritos; ?></span>
                 </p>
-                <p class="btn btn-success float-right">
-                    Certificados Gerados <span class="badge badge-light"> <?php echo $certificado['total']; ?></span>
+
+                <p class="btn btn-light float-right">
+                    Inscritos <span class="badge badge-light"> <?php echo count($users); ?></span>
                 </p>
                 <br><br><br>
 
@@ -73,7 +82,7 @@
                             <th>Atividades</th>
                             <th>Data Cert.</th>
                             <th>Data Inscri.</th>
-                            <th>Cancelar</th>
+                            <th>Remover</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -86,6 +95,11 @@
                                 $cat = "Estudante";
                             } else {
                                 $cat = "Administrador";
+                            }
+
+                            $remocaoHabilitada = false;
+                            if (empty($usuario['atividadesconcluidas']) && empty($usuario['dataCertificado'])) {
+                                $remocaoHabilitada = true;
                             }
 
 
@@ -104,7 +118,13 @@
                                 echo "</td>";
                             }
                             echo "<td>" . date_format(date_create($usuario['dtInscricao']), 'd/m/Y H:i:s') . "</td>";
-                            echo "<td><a href='" . base_url('inicio/cancelarInscricaoUsuarioEvento/') . "/" .$usuario['id']."/".$usuario['idEvento']. "'>Remover</a></td>" . "</tr>";
+                            if ($remocaoHabilitada) {
+                                echo "<td><a href='" . base_url('inicio/cancelarInscricaoUsuarioEvento/') . "/" . $usuario['id'] . "/" . $usuario['idEvento'] . "'><i class='fa fa-minus-circle text-danger' aria-hidden='true'></i></a></td>" . "</tr>";
+                            } else {
+                                echo "<td></td></tr>";
+                            }
+
+
                         endforeach;
 
                         ?>
