@@ -33,7 +33,7 @@
             position: relative;
             padding-bottom: 100px;
             box-sizing: border-box;
-            background-color: #f4f4f4;
+            background-color: #f9fbfd;
         }
 
         footer {
@@ -96,7 +96,7 @@
             width: 100%;
         }
 
-          .anchor {
+        .anchor {
             margin-left: 15px;
         }
 
@@ -107,12 +107,13 @@
             margin-bottom: 10px;
         }
 
-       
 
-        @media only screen and (min-width: 1200px) {      
+
+        @media only screen and (min-width: 1200px) {
             .evento {
                 margin-left: -50px;
             }
+
             .nav2 {
                 margin-left: 50px;
                 margin-right: 50px;
@@ -138,6 +139,16 @@
             border: 1px solid black;
             color: black;
             font-size: 10px;
+        }
+
+        a.anchor.acess:hover {
+            text-decoration: none;
+        }
+
+        a.anchor.acess:hover span {
+            background: #092e48;
+            color: white;
+            font-weight: bold;
         }
     </style>
     <?= $this->renderSection("css"); ?>
@@ -195,6 +206,7 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 </header>
+
 <body class="d-flex flex-column min-vh-100">
     <?php $uri = service('uri'); ?>
     <?php if (session()->get('isLoggedIn')) : ?>

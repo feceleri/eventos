@@ -19,7 +19,7 @@
     }
 
     i.fa.fa-minus-circle {
-        font-size: 17px;        
+        font-size: 17px;
     }
 
     td:last-child {
@@ -58,6 +58,8 @@
                 <h2>
                     <?php echo $users[0]['idEvento'] . " - " . $users[0]['titulo']; ?>
                 </h2>
+                <p class="btn btn-outline-info float-right" onclick="fnExcelReport()">Excel <span class="badge badge-light"><i class="fa fa-file-excel-o" aria-hidden="true"></i></span></a></p>
+
                 <p class="btn btn-success float-right">
                     Certificados <span class="badge badge-light"> <?php echo $certificado['total']; ?></span>
                 </p>
@@ -68,9 +70,12 @@
                 <p class="btn btn-light float-right">
                     Inscritos <span class="badge badge-light"> <?php echo count($users); ?></span>
                 </p>
+
+
+
                 <br><br><br>
 
-                <table class="table table-hover table-sm">
+                <table class="table table-hover table-sm" id="tblInscritos">
                     <thead class="thead">
                         <tr>
                             <th>#</th>
@@ -141,6 +146,41 @@
 <?= $this->endSection() ?>
 <?= $this->section('js'); ?>
 <script>
+    function fnExcelReport() {
+        var tab_text = "<table border='2px'><tr bgcolor='#87AFC6'>";
+        var textRange;
+        var j = 0;
+        tab = document.getElementById('tblInscritos'); // id of table
+
+        for (j = 0; j < tab.rows.length; j++) {
+            tab_text = tab_text + tab.rows[j].innerHTML + "</tr>";
+            //tab_text=tab_text+"</tr>";
+        }
+
+        tab_text = tab_text + "</table>";
+        tab_text = tab_text.replace(/<A[^>]*>|<\/A>/g, ""); //remove if u want links in your table
+        tab_text = tab_text.replace(/<img[^>]*>/gi, ""); // remove if u want images in your table
+        tab_text = tab_text.replace(/<input[^>]*>|<\/input>/gi, ""); // reomves input params
+
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) // If Internet Explorer
+        {
+            txtArea1.document.open("txt/html", "replace");
+            txtArea1.document.write(tab_text);
+            txtArea1.document.close();
+            txtArea1.focus();
+            sa = txtArea1.document.execCommand("SaveAs", true, "download.xls");
+        } else {
+            var BOM = "\uFEFF";
+            sa = window.open('data:application/vnd.ms-excel; charset=UTF-8,' + encodeURIComponent(BOM + tab_text));
+        } //other browser not tested on IE 11
+
+        return (sa);
+    }
+
+
     toastr.options = {
         "closeButton": true,
         "newestOnTop": false,

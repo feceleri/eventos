@@ -148,7 +148,7 @@
         width: 50px;
         height: 30px;
         transform: rotate(45deg);
-        background-color: #f4f4f4;
+        background-color: #f9fbfd;
     }
 
     .info::before {
@@ -159,7 +159,7 @@
         width: 22px;
         height: 61px;
         transform: rotate(45deg);
-        background-color: #f4f4f4;
+        background-color: #f9fbfd;
     }
 
     #myBtnContainer,
@@ -262,8 +262,8 @@
         </script>
     <?php } ?>
     <div class="container">
-        <h1>Eventos</h1>
-        <br><br>
+        <h2 class="text-center">Eventos</h2>
+        <br>
         <div id="a-inscritos" style="text-align: end; margin-bottom: 20px;">
             <?php
             if (
