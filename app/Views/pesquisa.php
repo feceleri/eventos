@@ -423,14 +423,14 @@
     }
 
     $msg = <?php echo "'" . $msg . "'"; ?>;
-    $origem = <?php echo "'" . $origem . "'"; ?>;
+    // $origem = <?php echo "'" . $origem . "'"; ?>;
     if ($msg) {
         toastr.info($msg);
-        if ($origem.length > 5) {
-            setTimeout(function() {
-                window.location.href = $origem; // the redirect goes here
-            }, 5000);
-        }
+        // if ($origem.length > 5) {
+        //     setTimeout(function() {
+        //         window.location.href = $origem; // the redirect goes here
+        //     }, 5000);
+        // }
     }
 
     const atividades = JSON.parse(JSON.stringify(<?php echo $atividades; ?>));
@@ -566,9 +566,9 @@
     });
 
     $("#form").on('submit', function() {
-        setTimeout(function() {
-            window.location.href = "<?php echo $origin; ?>"; // the redirect goes here
-        }, 5000);
+        // setTimeout(function() {
+        //     window.location.href = "<?php echo $origin; ?>"; // the redirect goes here
+        // }, 5000);
     });
 </script>
 <?= $this->endSection() ?>
