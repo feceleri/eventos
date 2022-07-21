@@ -1,142 +1,17 @@
-<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
-
-<?= $this->extend('default') ?>
-
-<?= $this->section('content') ?>
+<?= $this->extend('templates/default'); ?>
+<?= $this->section('css'); ?>
 <style>
-    body {
-
-        background-color: #F5F5F5;
+    .form-row .form-group {
+        justify-content: space-between;
     }
 
-    h2 {
-        color: #092e48;
-    }
-
-    #cad {
-        width: 200px;
-        background-color: #008CBA;
-        font-size: 12px;
-        padding: 12px 28px;
-        border-radius: 8px;
-        border: 2px solid;
-    }
-
-    #cad:hover {
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    #hora {
-        width: 100px;
-        float: left;
-        margin-top: -49px;
-        margin-left: 220px;
-    }
-
-    .data {
-        width: 200px;
-    }
-
-    .data1 {
-        width: 200px;
-        margin-top: -74px;
-        margin-left: 420px;
-    }
-
-    #hora2 {
-        width: 100px;
-        float: right;
-        margin-right: 340px;
-        margin-top: -49px;
-    }
-
-    #certificado {
-        width: 200px;
-        float: right;
-        margin-right: 50px;
-        margin-top: -49px;
-    }
-
-    h3 {
-        margin-top: 50px;
-        text-align: center;
-        color: red;
-    }
-
-
-
-    @media only screen and (min-width: 1400px) {
-        .session {
-            margin-left: 150px;
-            text-transform: uppercase;
-        }
-
-        .evento{
-            margin-left: -50px;
-        }
-
-        .menu {
-            margin-left: 200px;
-        }
-
-        .nav2 {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-        .pesq{
-            margin-left: 50px;
-        }
-
-        .campanha{
-            margin-left: 50px;
-        }
-
-    }
-
-
-
-    @media (max-width: 650px) {
-        #hora {
-            width: 100px;
-            margin-top: -2px;
-            margin-left: 0px;
-        }
-
-        .data {
-            width: 200px;
-        }
-
-        .data1 {
-            margin-top: 60px;
-            margin-left: 0;
-        }
-
-        #hora2 {
-            margin-top: 2px;
-        }
-
-        #certificado {
-            width: 200px;
-            margin-right: 240px;
-            margin-top: 40px;
-        }
-
-        #cad {
-            width: 200px;
-            background-color: #008CBA;
-            font-size: 12px;
-            padding: 12px 28px;
-            border-radius: 8px;
-            border: 2px solid;
-            margin-top: 100px;
-        }
+    .form-row label {
+        justify-content: initial;
+        width: inherit;
     }
 </style>
-
+<?= $this->endSection(); ?>
+<?= $this->section('content') ?>
 <main id="t3-content">
     <?php
     if (
@@ -146,10 +21,16 @@
     ?>
         <div class="row">
             <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="<?= base_url('inicio') ?>">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="<?= base_url('alterarAtividades') ?>">Atividades</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cadastrar</li>
+                    </ol>
+                </nav>
                 <div class="mx-auto ">
                     <div class="card">
-                        <div class="card-body">
-                            <a href="<?= base_url('alterarAtividades') ?>">Voltar</a>
+                        <div class="card-body">                            
                             <h2 class="card-title text-center col-12">Cadastro de Atividade</h2>
                             <?php
                             foreach ($data as $key => $evento) {
@@ -183,12 +64,12 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="form-label-group">
-                                        <textarea type="text" name="atividade" id="summernote" class="form-control col-12" placeholder="Atividade" autofocus required></textarea>
+                                        <textarea type="text" name="atividade" id="atividade" class="form-control col-12" placeholder="Atividade" autofocus required></textarea>
                                     </div>
                                 </div>
-                                <div class="form-group data" id="inicial">
-                                    <div class="form-label-group">
-                                        <label for="">Inicial :</label>
+                                <div class="form-row">
+                                    <div class="form-group col-md-2">
+                                        <label for="dtAgenda">Data Ini.</label>
                                         <input type="date" name="datainicial" id="dtAgenda" min="
                                 <?php foreach ($data as $key => $evento) {
 
@@ -199,50 +80,41 @@
                                     echo date_format(new DateTime($evento['dtFim']), "Y-m-d");
                                 } ?>" class="form-control" required />
                                     </div>
-                                </div>
-                                <div class="form-group ">
-                                    <div class="form-label-group">
-                                        <input type="time" name="hinicial" id="hora" class="form-control"" required />
+                                    <div class="form-group col-md-2">
+                                        <label for="hora">Hora Ini.</label>
+                                        <input type="time" name="hinicial" id="hora" class="form-control"" required />                                    
                                     </div>
-                                </div>
-                                <div class=" form-group data1" id="final">
-                                        <div class="form-label-group">
-                                            <label for="">Final:</label>
-                                            <input type="date" name="datafinal" id="dtAgenda1" min="
+                                    <div class=" form-group col-md-2">
+                                        <label for="dtAgenda1">Data Fim.</label>
+                                        <input type="date" name="datafinal" id="dtAgenda1" min="
                                     <?php foreach ($data as $key => $evento) {
-
                                         echo date_format(new DateTime($evento['dtInicio']), "Y-m-d");
                                     } ?>" max="  
                                     <?php foreach ($data as $key => $evento) {
-
                                         echo date_format(new DateTime($evento['dtFim']), "Y-m-d");
                                     } ?>" class="form-control" required />
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="hora2">Hora Fim.</label>
+                                        <input type="time" name="hfinal" id="hora2" class="form-control" required />
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="certificado">Certificado</label>
+                                        <select id="certificado" name="certificado" class="form-control">
+                                            <option selected disabled>Certificado</option>
+                                            <option value="1">Gera certificado</option>
+                                            <option value="2">Não gera certificado</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group text-right">
+                                    <?php if (isset($validation)) : ?>
+                                        <div class="alert alert-danger" roles="alert">
+                                            <?= $validation->listErrors(); ?>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-label-group">
-                                            <input type="time" name="hfinal" id="hora2" class="form-control" required />
-
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-label-group" required>
-                                            <select id="certificado" name="certificado" class="form-control">
-                                                <option selected disabled>Certificado</option>
-                                                <option value="1">Gera certificado</option>
-                                                <option value="2">Não gera certificado</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <?php if (isset($validation)) : ?>
-                                            <div class="alert alert-danger" roles="alert">
-                                                <?= $validation->listErrors(); ?>
-                                            </div>
-                                        <?php endif; ?>
-                                        <button class="btn btn-primary  text-uppercase" id="cad" type="submit">Cadastrar</button>
-                                    </div>
+                                    <?php endif; ?>
+                                    <button class="btn btn-primary" id="cad" type="submit">Cadastrar</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -255,14 +127,10 @@
     }
     ?>
 </main>
+<?= $this->endSection() ?>
+
+<?= $this->section('js'); ?>
 <script>
-    $(document).ready(function() {
-        $('#summernote').summernote();
-    });
-
-
-
-
     function atribuir(elem) {
         var datas = elem.options[elem.selectedIndex].getAttribute("title").split("|");
         var dtINI = document.getElementById("dtAgenda");

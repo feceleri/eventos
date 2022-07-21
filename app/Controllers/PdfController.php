@@ -119,11 +119,9 @@ class PdfController extends Controller
         } else {
             if ($this->request->getMethod(true) == 'POST') {
                 $text = $this->request->getVar('textCertificado');
-
-
                 $data  = [
                     'text' => $text
-                ];
+                ];            
 
                 $html = view('certificadoEmpty', $data);
 
@@ -186,9 +184,9 @@ class PdfController extends Controller
     }
 
     public function enviarCampanha($data = null)
-    {       
+    {
         try {
-            foreach ($data['registro'] as $key => $registro) {    
+            foreach ($data['registro'] as $key => $registro) {
                 ob_start();
 
                 $userMail = trim($registro->email);
@@ -199,7 +197,7 @@ class PdfController extends Controller
                 $options = new Options();
                 $options->set('isHtml5ParserEnabled', true);
                 $options->set('isRemoteEnabled', true);
-        
+
                 $config['protocol'] = getenv('protocol');
                 $config['mailType'] = getenv('mailType');
                 $config['SMTPHost'] = getenv('SMTPHost');
@@ -207,19 +205,19 @@ class PdfController extends Controller
                 $config['SMTPPass'] = getenv('SMTPPass');
                 $config['SMTPPort'] = getenv('SMTPPort');
 
-                
+
                 $mail->initialize($config);
                 $mail->setFrom($mail->SMTPUser, 'Eventos CRF');
                 $mail->setTo($userMail, $userNome);
                 $mail->setSubject($data['titulo']);
 
                 $mensagem = html_entity_decode($data['mensagem']);
-                foreach ($registro as $key => $reg) {                    
+                foreach ($registro as $key => $reg) {
                     $termo = "[@" . $key . "]";
                     $mensagem = str_replace($termo, $reg, $mensagem);
                 }
-                
-    
+
+
                 $urlImg = 'url("' . base_url('public/img/campanhas') . '/' . $data['background_image'] .  '")';
                 $html = "<style>html{margin:20px 40px}</style>
                 <div style='background-image: " . $urlImg . "; background-size: cover;
@@ -227,40 +225,40 @@ class PdfController extends Controller
                 width: 1049px;
                 height: 741px;'>";
                 $html .=  "<div style='position: relative;left: 50%;top: 50%;-webkit-transform: translate(-50%, -50%);transform: translate(-50%, -50%);'>";
-    
+
                 $conteudo = html_entity_decode($data['conteudo']);
-                foreach ($registro as $key => $reg) {                    
+                foreach ($registro as $key => $reg) {
                     $termo = "[@" . $key . "]";
                     $conteudo = str_replace($termo, $reg, $conteudo);
                 }
-    
+
                 $html .=  $conteudo;
                 $html .=  "</div>";
-                $html .=  "</div>";    
-                
+                $html .=  "</div>";
+
                 $pdf = new \Dompdf\Dompdf($options);
                 $pdf->loadHtml($html);
                 $pdf->setPaper('A4', 'landscape');
-                $pdf->render();                
-                $output= $pdf->output();
-                $mail->attach($output, 'application/pdf', $registro->nome.'.pdf', false);
+                $pdf->render();
+                $output = $pdf->output();
+                $mail->attach($output, 'application/pdf', $registro->nome . '.pdf', false);
                 $mail->setMessage($mensagem);
-                $success = $mail->send();                
+                $success = $mail->send();
                 $mail->clear(TRUE);
 
                 if (!$success) {
-                    $errorMessage = error_get_last()['message'];                    
-                    $errorMessage .= '<br>Erro ao enviar email para:'. $userMail.' '. $userNome;
-                    echo($errorMessage);
-                    exit;                    
+                    $errorMessage = error_get_last()['message'];
+                    $errorMessage .= '<br>Erro ao enviar email para:' . $userMail . ' ' . $userNome;
+                    echo ($errorMessage);
+                    exit;
                 }
 
-                ob_clean();               
+                ob_clean();
             }
             return true;
         } catch (\Exception $e) {
             echo $e->getMessage();
             return false;
-        }        
+        }
     }
 }

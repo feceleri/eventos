@@ -78,11 +78,11 @@
     'normal' => $fontDir . '/DejaVuSerif',
   ),
   'oxygen' => array(
-    'normal' => $fontDir . '/oxygen_normal_604142c9f193640c4302ff8a4ce707f1',
-    'bold' => $fontDir . '/oxygen_bold_2cee93c71dbc4a2f6ae2610fcf81376a',
+    'normal' => $fontDir . '/oxygen_normal_3e0490d9ba4547efdd8e46d4cd0ac041',
+    'bold' => $fontDir . '/oxygen_bold_c36e1bc0ad5db3c92b7bb4b6942c0f47',
   ),
   'roboto' => array(
-    '300' => $fontDir . '/roboto_300_080df75d218a8ebe8b75f6ba7182d343',
-    'normal' => $fontDir . '/roboto_normal_ad149bced3f7c2e0ff246c3940f6b965',
+    '300' => $fontDir . '/roboto_300_21960201651f2ea862182ff34dfd5ead',
+    'normal' => $fontDir . '/roboto_normal_9fa47a070a8b30b595086d70bb7ac78c',
   ),
 ) ?>

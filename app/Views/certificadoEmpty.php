@@ -88,7 +88,7 @@
 </head>
 
 <body id="t3-content">
-    <article id="conteudo-certificado" style="background-image: url('https://farmaceuticosp.com.br/encontro/public/certificado_marcos.jpg');">
+    <article id="conteudo-certificado" style="background-image: url('https://portal.crfsp.org.br/eventos/public/img/marcelo.jpg');">
         <section>
             <?php echo $text ?>
         </section>
