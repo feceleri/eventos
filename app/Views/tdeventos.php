@@ -2,27 +2,9 @@
 
 <?= $this->section('css'); ?>
 <style>
-    li.nav-item {
+    .card-footer li.nav-item {
         margin: 3px;
     }
-
-    h1 {
-        text-align: center;
-        margin-top: 30px;
-        color: #092e48;
-    }
-
-    h4 {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    h3 {
-        margin-top: 50px;
-        text-align: center;
-        color: red;
-    }
-
     .resumo {
         margin-top: 10px;
         font-size: 25px;
@@ -65,21 +47,6 @@
         margin-bottom: 21px;
     }
 
-    /* .cad2,
-    #btn,
-    .cad1 {
-        background-color: #008CBA;
-        font-size: 12px;
-        padding: 8px 15px;
-        border-radius: 8px;
-        border: 2px solid;
-        color: white;
-    }
-
-    .cad2:hover,
-    #btn:hover {
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    } */
 
     .image {
         width: 100%;
@@ -107,26 +74,6 @@
         display: block;
     }
 
-    /* .btn:hover {
-
-        border-radius: 8px;
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    .btn.active {
-        background-color: #666;
-        color: white;
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    #btn,
-    #btnsobreModal {
-        margin-left: 5px;
-        margin-top: 10px;
-        text-align: center;
-        height: 40px;
-        color: white;
-    } */
 
     .info {
         background: black;
@@ -167,20 +114,6 @@
         background-color: #f9fbfd;
     }
 
-    #myBtnContainer,
-    #a-inscritos {
-        z-index: 7;
-    }
-
-
-    #p1 {
-        margin-top: 10px;
-    }
-
-    #p2 {
-        margin-top: -10px;
-    }
-
     .card {
         border: none;
         box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
@@ -196,15 +129,6 @@
         padding: 1em;
     }
 
-    /* #btn:hover,
-    .btn:hover {
-        box-shadow: none;
-        background-color: #0b3e7a;
-    }
-
-    a.btn.btn-outline-info:hover {
-        color: white !important;
-    } */
 
     .encerradoTitle {
         background-color: #C0C0C0 !important;

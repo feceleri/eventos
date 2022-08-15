@@ -562,7 +562,8 @@ class Users extends BaseController
             $model = new UserModel();
             $data = [
                 'title' => 'Alterar Usuários',
-                'data' => $model->findAll(),
+                'data' => $model->withDeleted()->orderBy('id', 'desc')->paginate(50),
+                'pager' => $model->withDeleted()->orderBy('id', 'desc')->pager,
             ];
 
             echo view('templates/header', $data);

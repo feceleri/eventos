@@ -248,12 +248,10 @@ class Atividades extends BaseController
         if (!session()->get('isLoggedIn')) {
             return redirect()->to(base_url(''));
         } else {
-
-
             $model = new AtividadeModel();
             $data = [
                 'title' => 'Alterar Atividades',
-                'data' => $model->findAll(),
+                'data' => $model->orderBy('idEvento', 'DESC')->findAll(),
             ];
 
 
