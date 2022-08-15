@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <script src="https://cdn.tiny.cloud/1/v3a7dc1nzdd06k29ac2c2ubbcppcvjzd8s3bkrezrxj56hnf/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="<?= base_url() ?>/public/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
 
 
     <title><?php echo $title ?></title>
@@ -438,7 +438,7 @@
 
             tinymce.init({
                 selector: 'textarea',
-                plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap quickbars emoticons',
+                plugins: 'print preview paste importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap emoticons',
                 imagetools_cors_hosts: ['picsum.photos'],
                 menubar: 'file edit view insert format tools table help',
                 toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
@@ -523,9 +523,7 @@
                 quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
                 noneditable_noneditable_class: 'mceNonEditable',
                 toolbar_mode: 'sliding',
-                contextmenu: 'link image imagetools table',
-                skin: useDarkMode ? 'oxide-dark' : 'oxide',
-                content_css: useDarkMode ? 'dark' : 'default',
+                contextmenu: 'link image imagetools table',                                
                 content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
                 relative_urls: false,
                 remove_script_host: false,

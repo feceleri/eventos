@@ -8,7 +8,7 @@ use App\Models\UserAtividade;
 use App\Models\CertificadoModel;
 
 class Inscritos extends BaseController
-{    
+{
     public function relatorioEvento($id = null)
     {
         $usuarios =  new UserModel();
@@ -18,25 +18,31 @@ class Inscritos extends BaseController
 
         $uri = current_url(true);
         $eventID = $uri->getSegment(4);
+
+
         $users = $usuarios->select('users.id, concat(users.firstname," ", users.lastname) as nome, users.email, atividade_evento.idEvento, eventos.titulo, 
         pais.nome as pais, estado.nome as estado, users.`type`, group_concat(usuario_atividade.idAtividade) as atividadesconcluidas, 
         usuario_evento.created_at AS "dtInscricao", certificado.created_at AS "dataCertificado"')
             ->join('usuario_evento', 'usuario_evento.idUser =  users.id')
             ->join('eventos', 'usuario_evento.idEvento =  eventos.id')
-            ->join('atividade_evento', 'eventos.id = atividade_evento.idEvento')
+            ->join('atividade_evento', 'eventos.id = atividade_evento.idEvento', 'left')
             ->join('pais', 'users.pais = pais.id')
             ->join('estado', 'users.estado = estado.id', 'left')
             ->join('certificado', 'users.id = certificado.idUser  AND eventos.id = certificado.idEvento ', 'left')
             ->join('usuario_atividade', 'users.id = usuario_atividade.idUser AND atividade_evento.id = usuario_atividade.idAtividade', 'left')
             ->where('eventos.id', $id)
             ->groupBy('users.id')
-            ->get()->getResultArray();
-        
+            ->get()
+            ->getResultArray();
+
+        // $usuariosInscritos = $usuarios->select('*')->join('usuario_evento', 'usuario_evento.idUser =  users.id')->where('usuario_evento.idEvento', $id) ->get()->getResultArray();
+        // var_dump($usuariosInscritos);exit;
+
         $certificados = $certificado
             ->select('count(idUser) as total')
-            ->where('certificado.idEvento', $eventID)            
+            ->where('certificado.idEvento', $eventID)
             ->first();
-        
+
         $totalAtividade = $atividade
             ->select('count(id) as total')
             ->where('atividade_evento.idEvento', $eventID)
@@ -56,6 +62,7 @@ class Inscritos extends BaseController
             'users' => $users,
             'certificado' => $certificados,
             'inscritos' => $result,
+            'eventID' => $eventID,
         ];
 
         if (!session()->get('isLoggedIn')) {

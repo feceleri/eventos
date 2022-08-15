@@ -2,6 +2,10 @@
 
 <?= $this->section('css'); ?>
 <style>
+    li.nav-item {
+        margin: 3px;
+    }
+
     h1 {
         text-align: center;
         margin-top: 30px;
@@ -54,13 +58,14 @@
     .card {
         padding: 5px;
         border-width: medium;
+        min-width: 360px;
         max-width: 360px;
         margin: 5px;
         box-shadow: -11px 7px 8px -4px darkgrey;
         margin-bottom: 21px;
     }
 
-    .cad2,
+    /* .cad2,
     #btn,
     .cad1 {
         background-color: #008CBA;
@@ -74,7 +79,7 @@
     .cad2:hover,
     #btn:hover {
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    }
+    } */
 
     .image {
         width: 100%;
@@ -102,7 +107,7 @@
         display: block;
     }
 
-    .btn:hover {
+    /* .btn:hover {
 
         border-radius: 8px;
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -121,7 +126,7 @@
         text-align: center;
         height: 40px;
         color: white;
-    }
+    } */
 
     .info {
         background: black;
@@ -191,7 +196,7 @@
         padding: 1em;
     }
 
-    #btn:hover,
+    /* #btn:hover,
     .btn:hover {
         box-shadow: none;
         background-color: #0b3e7a;
@@ -199,7 +204,7 @@
 
     a.btn.btn-outline-info:hover {
         color: white !important;
-    }
+    } */
 
     .encerradoTitle {
         background-color: #C0C0C0 !important;
@@ -341,20 +346,20 @@
                                         }
                                         ?>
                                         </br>
-                                        <p>Restam apenas<strong> <?php echo $evento['vagas']; ?> </strong>vagas.</p>
+                                        Restam apenas<strong> <?php if($evento['vagas']<0){echo '0';}else{echo $evento['vagas'];} ?> </strong>vagas.
                                     </div>
                                 </div>
 
                                 <div class="card-footer text-muted" id="card-footer">
                                     <ul class="nav justify-content-center">
                                         <li class="nav-item">
-                                            <a type="button" id="btnsobreModal" class="cad2 btn btn-primary" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
+                                            <button type="button" id="btnsobreModal" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
                                                 Informações
-                                            </a>
+                                            </button>
                                             <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $evento['resumo'])); ?>">
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link active cad2" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Ingressar</a>
+                                            <a class=" btn btn-primary btn-sm" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Ingressar</a>
                                         </li>
                                         <li class="nav-item">
                                             <?php
@@ -368,18 +373,18 @@
                                                 $destinado = 4;
                                             }
 
-                                            if ($evento['inscrito'] == "Sim") {         
+                                            if ($evento['inscrito'] == "Sim") {
                                                 $jaison = json_encode($evento);
-                                                echo '<script> var jaison = '.$jaison.';</script>';
-                                                echo '<button type="button" class="btn btn-danger cad2" id="btn"  data-toggle="modal" data-target="#cancelaInscricaoModal" onclick="preencherModalCancelarInscricao(jaison);" >Inscrito</button>';
+                                                echo '<script> var jaison = ' . $jaison . ';</script>';
+                                                echo '<button type="button" class="btn  btn-danger btn-sm" id="btn"  data-toggle="modal" data-target="#cancelaInscricaoModal" onclick="preencherModalCancelarInscricao(jaison);" >Cancelar</button>';
                                             } else if ((int)$evento['vagas'] <= 0) {
-                                                echo '<button class="btn btn-primary cad2" id="btn"  disabled>Esgotado </button>';
+                                                echo '<button class="btn btn-primary btn-sm" id="btn"  disabled>Esgotado </button>';
                                             } else if ($evento['Expirado'] == 'Sim') {
-                                                echo '<button type="button" class="btn btn-primary cad1" id="btn" disabled>Encerrado</button>';
+                                                echo '<button type="button" class="btn btn-primary btn-sm" id="btn" disabled>Encerrado</button>';
                                             } else if (!(in_array($destinado, json_decode($evento['destinado'])))) {
-                                                echo '<button class="btn btn-primary cad2" id="btn"   disabled><span data-tooltip="Evento restrito ao público-alvo">Inscreva-se</span></button>';
+                                                echo '<button class="btn btn-primary btn-sm" id="btn"   disabled><span data-tooltip="Evento restrito ao público-alvo">Inscreva-se</span></button>';
                                             } else if ($evento['Expirado'] == 'Não') {
-                                                echo '<button class="btn btn-primary cad2" id="btn" data-toggle="modal" data-target="#inscrevaModal" onclick="preenchermodal(' . $evento['id'] . ');">Inscreva-se</button>';
+                                                echo '<button class="btn btn-primary btn-sm" id="btn" data-toggle="modal" data-target="#inscrevaModal" onclick="preenchermodal(' . $evento['id'] . ');">Inscreva-se</button>';
                                             }
                                             ?>
                                         </li>
@@ -451,26 +456,26 @@
                                         }
                                         ?>
                                         <br>
-                                        Restam apenas<strong> <?php echo $evento['vagas']; ?> </strong>vagas.
+                                        Restam apenas<strong> <?php if($evento['vagas']<0){echo '0';}else{echo $evento['vagas'];} ?> </strong>vagas.
                                     </div>
                                 </div>
 
                                 <div class="card-footer text-muted" id="card-footer">
                                     <ul class="nav justify-content-center">
                                         <li class="nav-item">
-                                            <a type="button" id="btnsobreModal" class="cad2 btn btn-primary encerrado" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
+                                            <button type="button" id="btnsobreModal" class=" btn btn-primary encerrado btn-sm" data-toggle="modal" data-target="#sobreModal" onclick="preenchermodalSobre('hdn<?= $evento['id'] ?>')">
                                                 Informações
-                                            </a>
+                                            </button>
                                             <input type="hidden" id="hdn<?= $evento['id'] ?>" value="<?= htmlentities(preg_replace(array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s', '/<!--(.|\s)*?-->/'), array('>', '<', '\\1', ''), $evento['resumo'])); ?>">
 
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link active cad2 encerrado" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Ingressar</a>
+                                            <a class=" btn btn-primary encerrado btn-sm" id="btn" href="<?php echo base_url("/inicio/listaEvento") . "/" . $evento['id'] ?>">Ingressar</a>
                                         </li>
                                         <li class="nav-item">
                                             <?php
 
-                                            echo '<button type="button" class="btn btn-primary cad1 encerrado" id="btn"  disabled>Encerrado</button>';
+                                            echo '<button type="button" class="btn btn-primary btn-sm encerrado" id="btn"  disabled>Encerrado</button>';
 
                                             ?>
                                         </li>
@@ -506,7 +511,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary cad2" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -596,7 +601,7 @@
 <?= $this->section('js'); ?>
 <script>
     function preenchermodal(id) {
-        var link = '<?php echo (base_url('inicio/inscreverEvento/') . "/"); ?>';        
+        var link = '<?php echo (base_url('inicio/inscreverEvento/') . "/"); ?>';
         document.getElementById("btnConfirmaInscricao").href = link + id;
     }
 

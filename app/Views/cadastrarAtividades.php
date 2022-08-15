@@ -37,16 +37,7 @@
                             } ?>
                             <form class="form-signin" name='form1' method="POST">
                                 <div class="form-group ">
-                                    <div class="form-label-group" required>
-                                        <script>
-                                            $("#selectEvent").on("change", function() {
-
-                                                idEventoJs = $("#selectEvent").val();
-                                                alert(idEventoJs);
-                                                $.ajax({});
-
-                                            });
-                                        </script>
+                                    <div class="form-label-group" required>                                      
                                         <select id="selectEvent" name="selectEvent" class="form-control col-12" required onchange="atribuir(this)">
                                             <option selected disabled>Eventos</option>
                                             <?php
@@ -64,7 +55,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="form-label-group">
-                                        <textarea type="text" name="atividade" id="atividade" class="form-control col-12" placeholder="Atividade" autofocus required></textarea>
+                                        <textarea type="text" name="atividade" id="atividade" class="form-control col-12" placeholder="Atividade"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-row">

@@ -106,11 +106,11 @@
 
                             if ($inscrito == true) {
 
-                                echo '<a class="btn btn-primary cad" id="cad' . $key . '" href= ' . base_url('/atividades/inscreverAtividade') . "/" . $atividade['id'] . ' onclick="inscreverAtividade(' . $atividade['id'] . ');"  role="button" style="display: none;">Ir</a>';
+                                echo '<a class="btn btn-primary cad" id="cad' . $key . '" href= ' . base_url('/atividades/inscreverAtividade') . "/" . $atividade['id'] . ' onclick="inscreverAtividade(' . $atividade['id'] . ');"  role="button" style="display: none;" target="_blank">Ir</a>';
                                 echo '
                                     <span id="countdown' . $key . '"  class="timer"></span>';
                             } else {
-                                echo '<a class="btn btn-primary" id="cad1" data-toggle="modal" data-target="#sobreModal">Ir</a>';
+                                echo '<a class="btn btn-primary" id="cad1" data-toggle="modal" data-target="#sobreModal" target="_blank">Ir</a>';
                             }
                             echo  '</td></tr>';
                         }

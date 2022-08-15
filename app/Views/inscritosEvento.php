@@ -124,7 +124,7 @@
                             }
                             echo "<td>" . date_format(date_create($usuario['dtInscricao']), 'd/m/Y H:i:s') . "</td>";
                             if ($remocaoHabilitada) {
-                                echo "<td><a href='" . base_url('inicio/cancelarInscricaoUsuarioEvento/') . "/" . $usuario['id'] . "/" . $usuario['idEvento'] . "'><i class='fa fa-minus-circle text-danger' aria-hidden='true'></i></a></td>" . "</tr>";
+                                echo "<td><a href='" . base_url('inicio/cancelarInscricaoUsuarioEvento/') . "/" . $usuario['id'] . "/" . $eventID . "'><i class='fa fa-minus-circle text-danger' aria-hidden='true'></i></a></td>" . "</tr>";
                             } else {
                                 echo "<td></td></tr>";
                             }

@@ -1,6 +1,5 @@
-<?= $this->extend('default') ?>
-
-<?= $this->section('content') ?>
+<?= $this->extend('templates/default'); ?>
+<?= $this->section('css'); ?>
 
 <style>
     h2 {
@@ -155,7 +154,7 @@
             text-transform: uppercase;
         }
 
-        .evento{
+        .evento {
             margin-left: -50px;
         }
 
@@ -167,47 +166,18 @@
             margin-left: 50px;
             margin-right: 50px;
         }
-        .pesq{
+
+        .pesq {
             margin-left: 50px;
         }
 
-        .campanha{
+        .campanha {
             margin-left: 50px;
         }
     }
 </style>
-<script language='Javascript'>
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1; //Janeiro é 0, então somamos + 1 para trabalhar com calendário conhecido
-    var yyyy = today.getFullYear();
-    // Data de hoje mais 5 dias
-    dd = dd + 5;
-    //se for maior que dia 30 vai para o proximo mês
-    if (dd > 30) {
-        dd = dd - 30;
-        mm = mm + 1;
-    }
-    //se for maior que 12 vai para o proximo ano
-    if (mm > 12) {
-        mm = 1;
-        yyyy = yyyy + 1;
-    }
-    // Se for menor que 10 formatamos com um zero na frente Ex: de 9 para 09
-    if (dd < 10) {
-        dd = '0' + dd;
-    }
-    // Se for menor que 10 formatamos com um zero na frente Ex: de 9 para 09
-    if (mm < 10) {
-        mm = '0' + mm;
-    }
-    today = yyyy + '-' + mm + '-' + dd;
-    document.getElementsByClassName("dtAgenda").setAttribute("min", today);
-    today = dd + '/' + mm + '/' + yyyy;
-    var div = document.getElementById("divDtFutura");
-    div.innerText = today;
-</script>
-
+<?= $this->endSection(); ?>
+<?= $this->section('content') ?>
 <main id="t3-content">
     <?php
     if (
@@ -243,7 +213,7 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="form-label-group">
-                                        <textarea name="resumo" id="resumo" class="form-control" placeholder="Resumo" required autofocus></textarea>
+                                        <textarea name="resumo" id="resumo" class="form-control" placeholder="Resumo"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-6 data" id="inicial">
@@ -340,6 +310,37 @@
     }
     ?>
 </main>
+<?= $this->endSection(); ?>
+<?= $this->section('js') ?>
+<script language='Javascript'>
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //Janeiro é 0, então somamos + 1 para trabalhar com calendário conhecido
+    var yyyy = today.getFullYear();
+    // Data de hoje mais 5 dias
+    // dd = dd + 5;
+    //se for maior que dia 30 vai para o proximo mês
+    if (dd > 30) {
+        dd = dd - 30;
+        mm = mm + 1;
+    }
+    //se for maior que 12 vai para o proximo ano
+    if (mm > 12) {
+        mm = 1;
+        yyyy = yyyy + 1;
+    }
+    // Se for menor que 10 formatamos com um zero na frente Ex: de 9 para 09
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    // Se for menor que 10 formatamos com um zero na frente Ex: de 9 para 09
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+    today = yyyy + '-' + mm + '-' + dd;
+    document.getElementById("dtAgenda").setAttribute("min", today);
+    today = dd + '/' + mm + '/' + yyyy;
+</script>
 
 <script>
     function readURL(input) {
